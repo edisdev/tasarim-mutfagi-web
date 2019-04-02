@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Adem ilter <ademilter@gmail.com>",
   "dependencies": {
+    "@storybook/addon-a11y": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.6",
     "gatsby": "^2.3.3",
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-manifest": "^2.0.25",
@@ -19,7 +21,13 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "@storybook/react": "^5.0.6",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@babel/core": "^7.4.0",
+    "babel-loader": "^8.0.5"
   },
   "keywords": [
     "gatsby"
@@ -30,7 +38,9 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "format": "prettier --write src/**/*.{js,jsx}"
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
