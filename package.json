@@ -34,13 +34,14 @@
   ],
   "license": "MIT",
   "scripts": {
+    "netlify": "npm run build && npm run build-storybook",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "format": "prettier --write src/**/*.{js,jsx}",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o public/storybook"
   },
   "repository": {
     "type": "git",
