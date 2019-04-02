@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "tasarim-mutfagi-web",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Adem ilter <ademilter@gmail.com>",
   "dependencies": {
     "gatsby": "^2.3.3",
     "gatsby-image": "^2.0.35",
@@ -28,10 +28,9 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "format": "prettier --write src/**/*.{js,jsx}"
   },
   "repository": {
     "type": "git",
