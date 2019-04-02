@@ -1,21 +1,21 @@
 {
   "siteMetadata": {
-    "title": "ademilter's timeline",
-    "author": "adem ilter",
+    "title": "Tasarım Mutfağı",
+    "author": "tm",
     "description": "A starter blog demonstrating what Gatsby can do.",
-    "siteUrl": "https://ademilter.com/",
+    "siteUrl": "https://tasarimmutfagi.com/",
     "social": {
-      "twitter": "ademilter"
+      "twitter": "tm"
     }
   },
   "manifest": {
-    "name": "Gatsby Starter Blog",
-    "short_name": "GatsbyJS",
+    "name": "gatsby-starter-default",
+    "short_name": "starter",
     "start_url": "/",
-    "background_color": "#ffffff",
-    "theme_color": "#663399",
+    "background_color": "#111",
+    "theme_color": "#111",
     "display": "minimal-ui",
-    "icon": "content/assets/gatsby-icon.png"
+    "icon": "src/images/icon.jpg"
   },
   "trackingId": 4564534
 }
