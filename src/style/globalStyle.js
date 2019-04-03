@@ -88,8 +88,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${p => p.theme.font.family};
     font-weight: ${p => p.theme.font.weight.light};
     font-size: ${p => p.theme.font.size.normal + 'px'};
-    background-color: ${p => p.theme.color.dark};
-    color: ${p => p.theme.color.white};
+    background-color: ${p => p.theme.color.brand.dark};
+    color: ${p => p.theme.color.brand.white};
   }
 `
 
