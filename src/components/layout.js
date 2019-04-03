@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
 import { ThemeProvider } from 'styled-components'
+import ResetStyle from 'style/resetStyle'
 import GlobalStyle from 'style/globalStyle'
 import theme from 'style/theme'
 
@@ -21,6 +22,7 @@ const Layout = ({ children }) => (
     render={data => (
       <ThemeProvider theme={theme}>
         <>
+          <ResetStyle />
           <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
           <main>{children}</main>
