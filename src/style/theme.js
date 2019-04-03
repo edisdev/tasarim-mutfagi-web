@@ -1,10 +1,13 @@
 export default {
+  breakpoints: {
+    desktop: '992px'
+  },
   color: {
     brand: {
-      white: '#ffffff',
+      primary: '#005cff',
       dark: '#262626',
       gray: '#a8a8a8',
-      primary: '#005cff'
+      white: '#ffffff'
     },
     social: {
       facebook: '#3b5998',
@@ -15,25 +18,41 @@ export default {
       meetup: '#e0393e'
     }
   },
-
   font: {
     family: 'TT Norms',
-    size: {
-      normal: 18,
-      h1: 48,
-      h2: 32
-    },
     weight: {
-      light: 300,
-      regular: 400,
-      semibold: 600,
-      bold: 800
+      regular: 500,
+      bold: 'bold'
+    },
+    size: {
+      body: {
+        mobile: 16,
+        desktop: 18
+      },
+      small: {
+        mobile: 14,
+        desktop: 14
+      },
+      h1: {
+        mobile: 32,
+        desktop: 48
+      },
+      h2: {
+        mobile: 32,
+        desktop: 32
+      },
+      h3: {
+        mobile: 32,
+        desktop: 24
+      },
+      h4: {
+        mobile: 28,
+        desktop: 24
+      },
+      h5: {
+        mobile: 18,
+        desktop: 18
+      }
     }
-  },
-  breakpoints: {
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px'
   }
 }
