@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require('path')
 const config = require('./config.json')
 
 module.exports = {
@@ -20,12 +20,20 @@ module.exports = {
       options: config.manifest
     },
     {
-      resolve: "gatsby-plugin-root-import",
+      resolve: 'gatsby-plugin-root-import',
       options: {
-        style: path.join(__dirname, "src/style"),
-        utils: path.join(__dirname, "src/utils"),
-        components: path.join(__dirname, "src/components")
-      },
+        style: path.join(__dirname, 'src/style'),
+        utils: path.join(__dirname, 'src/utils'),
+        components: path.join(__dirname, 'src/components')
+      }
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          urls: ['/font-face/style.css']
+        }
+      }
+    }
   ]
 }

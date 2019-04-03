@@ -17,7 +17,7 @@ export default {
   },
 
   font: {
-    family: 'Inter',
+    family: 'TT Norms',
     size: {
       normal: 18,
       h1: 48,
