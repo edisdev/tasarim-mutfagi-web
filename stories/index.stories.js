@@ -1,9 +1,16 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-// import { action } from '@storybook/addon-actions'
-// import { linkTo } from '@storybook/addon-links'
 
-storiesOf('Typography', module)
+import {
+  BtnWhiteGhost,
+  BtnPrimaryGhost,
+  BtnPrimaryFill
+} from '../src/style/Button'
+import Color from '../src/style/Color'
+import theme from '../src/style/theme'
+import CountCard from '../src/components/CountCard'
+
+storiesOf('Atoms|Typography', module)
   .add('Head 1', () => <h1>Tasarımı Tasarımcıların Konuştuğu Oluşum</h1>)
   .add('Head 2', () => <h2>Neden Katılmalıyım?</h2>)
   .add('Head 3', () => <h3>YouTube’da Bizi Takip Etmeyi Unutma</h3>)
@@ -23,18 +30,27 @@ storiesOf('Typography', module)
     </small>
   ))
 
-/*storiesOf('Welcome', module).add('to Storybook', () => (
-  <Welcome showApp={linkTo('Button')} />
-))*/
+storiesOf('Atoms|Colors', module).add('Colors', () => (
+  <div style={{ display: 'flex' }}>
+    <Color color="primary">{theme.color.brand.primary}</Color>
+    <Color color="dark">{theme.color.brand.dark}</Color>
+    <Color color="gray">{theme.color.brand.gray}</Color>
+    <Color color="white" style={{ color: theme.color.brand.dark }}>
+      {theme.color.brand.white}
+    </Color>
+  </div>
+))
 
-/*storiesOf('Button', module)
-  .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+storiesOf('Molecules|Count Card', module)
+  .add('Card', () => <CountCard count={123} type="twitter" label="Twitter" />)
+  .add('Card List', () => (
+    <div>
+      <CountCard count={123} label="Twitter" />
+      <CountCard count={53} label="Youtube" />
+    </div>
   ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ))*/
+
+storiesOf('Atoms|Buttons', module)
+  .add('White Ghost', () => <BtnWhiteGhost>Bize Yaz</BtnWhiteGhost>)
+  .add('Primary Ghost', () => <BtnPrimaryGhost>Bilet Al</BtnPrimaryGhost>)
+  .add('Primary Fill', () => <BtnPrimaryFill>Topluluğa Katıl</BtnPrimaryFill>)
