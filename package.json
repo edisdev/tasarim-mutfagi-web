@@ -5,8 +5,6 @@
   "version": "0.1.0",
   "author": "Adem ilter <ademilter@gmail.com>",
   "dependencies": {
-    "@storybook/addon-a11y": "^5.0.6",
-    "@storybook/addon-knobs": "^5.0.6",
     "gatsby": "^2.3.3",
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-manifest": "^2.0.25",
@@ -17,22 +15,27 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.17",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "styled-breakpoints": "^6.6.2",
+    "react-rasta": "^1.0.4",
+    "styled-bootstrap-grid": "^3.0.2",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.16.4",
-    "@storybook/react": "^5.0.6",
-    "@storybook/addon-actions": "^5.0.6",
-    "@storybook/addon-links": "^5.0.6",
-    "@storybook/addons": "^5.0.6",
     "@babel/core": "^7.4.0",
-    "babel-loader": "^8.0.5"
+    "@storybook/addon-a11y": "^5.0.6",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addon-viewport": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@storybook/react": "^5.0.6",
+    "babel-loader": "^8.0.5",
+    "prettier": "^1.16.4"
   },
   "keywords": [
     "gatsby"

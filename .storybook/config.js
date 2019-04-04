@@ -1,6 +1,8 @@
 import React from 'react'
 import { addParameters, addDecorator, configure } from '@storybook/react'
 import { create } from '@storybook/theming'
+import { withA11y } from '@storybook/addon-a11y'
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 import { ThemeProvider } from 'styled-components'
 import ResetStyle from '../src/style/resetStyle'
@@ -13,13 +15,14 @@ function Layout(storyFn) {
       <>
         <ResetStyle />
         <GlobalStyle />
-        {storyFn()}
+        <div style={{ padding: '30px' }}>{storyFn()}</div>
       </>
     </ThemeProvider>
   )
 }
 
 addDecorator(Layout)
+addDecorator(withA11y)
 
 const theme = create({
   // brandTitle: 'My custom storybook',
@@ -28,6 +31,18 @@ const theme = create({
 })
 
 addParameters({
+  viewport: {
+    viewports: {
+      iphonex: INITIAL_VIEWPORTS.iphonex,
+      Desktop: {
+        name: 'Desktop',
+        styles: {
+          width: '1200px',
+          height: '800px'
+        }
+      }
+    }
+  },
   options: {
     theme
   }
