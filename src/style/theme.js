@@ -1,21 +1,23 @@
 export default {
-  breakpoints: {
-    desktop: '992px'
-  },
+  fingerSize: '50px',
+  radius: '2px',
   color: {
     brand: {
-      primary: '#005cff',
-      dark: '#262626',
-      gray: '#a8a8a8',
-      white: '#ffffff'
+      primary: '#005CFF',
+      dark: '#000000',
+      hide: '#262626',
+      gray: '#A8A8A8',
+      white: '#FFFFFF'
     },
     social: {
-      facebook: '#3b5998',
-      youtube: '#ff0000',
-      twitter: '#1da1f2',
-      medium: '#00ab6c',
-      instagram: '#5851db',
-      meetup: '#e0393e'
+      facebook: '#3B5998',
+      youtube: '#FF0000',
+      twitter: '#1DA1F2',
+      medium: '#00AB6C',
+      instagram: '#5851DB',
+      meetup: '#E0393E',
+      slack: '#E9A820',
+      mailchimp: '#6DC5DC'
     }
   },
   font: {
@@ -26,33 +28,53 @@ export default {
     },
     size: {
       body: {
-        mobile: 16,
-        desktop: 18
+        mobile: '16px',
+        desktop: '18px'
       },
       small: {
-        mobile: 14,
-        desktop: 14
+        mobile: '14px'
       },
       h1: {
-        mobile: 32,
-        desktop: 48
+        mobile: '32px',
+        desktop: '48px'
       },
       h2: {
-        mobile: 32,
-        desktop: 32
+        mobile: '32px'
       },
       h3: {
-        mobile: 32,
-        desktop: 24
+        mobile: '32px',
+        desktop: '24px'
       },
       h4: {
-        mobile: 28,
-        desktop: 24
+        mobile: '28px',
+        desktop: '24px'
       },
       h5: {
-        mobile: 18,
-        desktop: 18
+        mobile: '18px'
       }
+    }
+  },
+  breakpoints: {
+    xl: 1200,
+    lg: 992,
+    md: 768,
+    sm: 576,
+    xs: 575
+  },
+  row: {
+    padding: 15
+  },
+  col: {
+    padding: 15
+  },
+  container: {
+    padding: 15,
+    maxWidth: {
+      xl: 1140,
+      lg: 960,
+      md: 720,
+      sm: 540,
+      xs: 540
     }
   }
 }

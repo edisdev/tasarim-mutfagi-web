@@ -25,7 +25,6 @@ const ResetStyle = createGlobalStyle`
 
   input, textarea, select, button {
     font: inherit;
-    font-weight: normal;
   }
 
   textarea {
