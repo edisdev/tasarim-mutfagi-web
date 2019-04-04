@@ -1,0 +1,53 @@
+:root {
+  /* GLOBAL */
+
+  --finger: 50px;
+  --radius: 2px;
+  --transition: 120ms;
+
+  /* COLOR */
+
+  --color-primary: #005cff;
+  --color-dark: #000000;
+  --color-hide: #262626;
+  --color-gray: #a8a8a8;
+  --color-white: #ffffff;
+
+  --color-facebook: #3b5998;
+  --color-youtube: #ff0000;
+  --color-twitter: #1da1f2;
+  --color-medium: #00ab6c;
+  --color-instagram: #5851db;
+  --color-meetup: #e0393e;
+  --color-slack: #e9a820;
+  --color-mailchimp: #6dc5dc;
+
+  /* SPACE */
+
+  --space: 8px;
+  --space-1: calc(var(--space) / 2); /* 4px */
+  --space-2: var(--space); /* 8px */
+  --space-3: calc(var(--space) * 2); /* 16px */
+  --space-4: calc(var(--space) * 3); /* 24px */
+  --space-5: calc(var(--space) * 4); /* 32px */
+
+  /* FONT */
+
+  --ff-text: 'TT Norms', sans-serif;
+
+  --fw-normal: normal; // 500
+  --fw-bold: bold; // 600
+
+  --fs-body: 16px;
+  --fs-body-desktop: 18px;
+  --fs-small: 14px;
+  --fs-h1: 32px;
+  --fs-h1-desktop: 48px;
+  --fs-h2: 32px;
+  --fs-h3: 32px;
+  --fs-h3-desktop: 24px;
+  --fs-h4: 28px;
+  --fs-h4-desktop: 24px;
+  --fs-h5: 18px;
+  --fs-h6: 16px;
+}

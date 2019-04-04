@@ -1,14 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import {
-  BtnWhiteGhost,
-  BtnPrimaryGhost,
-  BtnPrimaryFill
-} from '../src/style/Button'
-import Color from '../src/style/Color'
-import theme from '../src/style/theme'
-import CountCard from '../src/components/CountCard'
+// import CountCard from '../src/components/CountCard'
 
 storiesOf('Atoms|Typography', module)
   .add('Head 1', () => <h1>Tasarımı Tasarımcıların Konuştuğu Oluşum</h1>)
@@ -32,25 +25,23 @@ storiesOf('Atoms|Typography', module)
 
 storiesOf('Atoms|Colors', module).add('Colors', () => (
   <div style={{ display: 'flex' }}>
-    <Color color="primary">{theme.color.brand.primary}</Color>
-    <Color color="dark">{theme.color.brand.dark}</Color>
-    <Color color="gray">{theme.color.brand.gray}</Color>
-    <Color color="white" style={{ color: theme.color.brand.dark }}>
-      {theme.color.brand.white}
-    </Color>
+    <div className="color --primary">primary</div>
+    <div className="color --dark">dark</div>
+    <div className="color --gray">gray</div>
+    <div className="color --white">white</div>
   </div>
 ))
 
-storiesOf('Molecules|Count Card', module)
-  .add('Card', () => <CountCard count={123} type="twitter" label="Twitter" />)
-  .add('Card List', () => (
-    <div>
-      <CountCard count={123} label="Twitter" />
-      <CountCard count={53} label="Youtube" />
-    </div>
-  ))
+// storiesOf('Molecules|Count Card', module)
+//   .add('Card', () => <CountCard count={123} type="twitter" label="Twitter" />)
+//   .add('Card List', () => (
+//     <div>
+//       <CountCard count={123} label="Twitter" />
+//       <CountCard count={53} label="Youtube" />
+//     </div>
+//   ))
 
-storiesOf('Atoms|Buttons', module)
-  .add('White Ghost', () => <BtnWhiteGhost>Bize Yaz</BtnWhiteGhost>)
-  .add('Primary Ghost', () => <BtnPrimaryGhost>Bilet Al</BtnPrimaryGhost>)
-  .add('Primary Fill', () => <BtnPrimaryFill>Topluluğa Katıl</BtnPrimaryFill>)
+// storiesOf('Atoms|Buttons', module)
+//   .add('White Ghost', () => <BtnWhiteGhost>Bize Yaz</BtnWhiteGhost>)
+//   .add('Primary Ghost', () => <BtnPrimaryGhost>Bilet Al</BtnPrimaryGhost>)
+//   .add('Primary Fill', () => <BtnPrimaryFill>Topluluğa Katıl</BtnPrimaryFill>)

@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,15 +32,8 @@ module.exports = {
       options: {
         style: path.join(__dirname, 'src/style'),
         utils: path.join(__dirname, 'src/utils'),
-        components: path.join(__dirname, 'src/components')
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        custom: {
-          urls: ['/font-face/style.css']
-        }
+        components: path.join(__dirname, 'src/components'),
+        images: path.join(__dirname, 'src/images')
       }
     }
   ]

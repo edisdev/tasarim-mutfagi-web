@@ -9,21 +9,17 @@
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-manifest": "^2.0.25",
     "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-react-helmet": "^3.0.11",
     "gatsby-plugin-root-import": "^2.0.5",
     "gatsby-plugin-sharp": "^2.0.32",
-    "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.17",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
-    "react-rasta": "^1.0.4",
-    "styled-bootstrap-grid": "^3.0.2",
-    "styled-components": "^4.2.0"
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -35,6 +31,11 @@
     "@storybook/addons": "^5.0.6",
     "@storybook/react": "^5.0.6",
     "babel-loader": "^8.0.5",
+    "postcss": "^7.0.14",
+    "postcss-comment": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
     "prettier": "^1.16.4"
   },
   "keywords": [
@@ -48,7 +49,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -o public/storybook"
   },
   "repository": {

@@ -2,23 +2,10 @@ import React from 'react'
 import { addParameters, addDecorator, configure } from '@storybook/react'
 import { create } from '@storybook/theming'
 import { withA11y } from '@storybook/addon-a11y'
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-
-import { ThemeProvider } from 'styled-components'
-import ResetStyle from '../src/style/resetStyle'
-import GlobalStyle from '../src/style/globalStyle'
-import ThemeStyle from '../src/style/theme'
+import '../src/style/app.css'
 
 function Layout(storyFn) {
-  return (
-    <ThemeProvider theme={ThemeStyle}>
-      <>
-        <ResetStyle />
-        <GlobalStyle />
-        <div style={{ padding: '30px' }}>{storyFn()}</div>
-      </>
-    </ThemeProvider>
-  )
+  return <div style={{ padding: '30px' }}>{storyFn()}</div>
 }
 
 addDecorator(Layout)
@@ -33,7 +20,6 @@ const theme = create({
 addParameters({
   viewport: {
     viewports: {
-      iphonex: INITIAL_VIEWPORTS.iphonex,
       Desktop: {
         name: 'Desktop',
         styles: {

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/typeface/TTNorms-Medium.woff2') format('woff2'),
+    url('/typeface/TTNorms-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/typeface/TTNorms-Bold.woff2') format('woff2'),
+    url('/typeface/TTNorms-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
