@@ -1,11 +1,29 @@
 @import 'formalize.css';
 
 @import 'typeface.css';
+@import 'grid.css';
 @import 'variables.css';
 
 @import 'common.css';
 @import 'typography.css';
 @import 'button.css';
+
+.card{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 10px;
+   height: 140px;
+   color: var(--color-white);
+   border: 10px solid var(--color-primary);
+   border-radius: var(--radius);
+
+   &:hover {
+     border-color: var(--color-primary);
+     background-color: var(--color-primary);
+   }
+}
 
 .color {
   display: flex;
