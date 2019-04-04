@@ -6,6 +6,8 @@ import ResetStyle from 'style/resetStyle'
 import GlobalStyle from 'style/globalStyle'
 import theme from 'style/theme'
 
+import { GridThemeProvider } from 'styled-bootstrap-grid'
+
 import Header from 'components/header'
 
 const Layout = ({ children }) => (
@@ -21,12 +23,14 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
-        <>
-          <ResetStyle />
-          <GlobalStyle />
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <main>{children}</main>
-        </>
+        <GridThemeProvider gridTheme={theme}>
+          <>
+            <ResetStyle />
+            <GlobalStyle />
+            <Header siteTitle={data.site.siteMetadata.title} />
+            <main>{children}</main>
+          </>
+        </GridThemeProvider>
       </ThemeProvider>
     )}
   />

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "twitter",
+    "label": "Twitter",
+    "count": 34,
+    "url": "dasdad"
+  },
+  {
+    "name": "youtube",
+    "label": "Youtube",
+    "count": 123123,
+    "url": "dasdad"
+  },
+  {
+    "name": "meetup",
+    "label": "Meetup",
+    "count": 123123,
+    "url": "dasdad"
+  },
+  {
+    "name": "slack",
+    "label": "Slack",
+    "count": 123123,
+    "url": "dasdad"
+  },
+  {
+    "name": "instagram",
+    "label": "Instagram",
+    "count": 123123,
+    "url": "dasdad"
+  },
+  {
+    "name": "mailchimp",
+    "label": "Bülten",
+    "count": 123123,
+    "url": "dasdad"
+  }
+]
