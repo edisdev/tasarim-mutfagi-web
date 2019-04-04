@@ -7,6 +7,7 @@ const Card = styled.a`
   justify-content: center;
   flex-direction: column;
   padding: 10px;
+  height: 140px;
   color: ${p => p.theme.color.brand.white};
   border: 10px solid ${p => p.theme.color.brand.hide};
   border-radius: ${p => p.theme.radius};
