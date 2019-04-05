@@ -8,19 +8,21 @@
   /* COLOR */
 
   --color-primary: #005cff;
+  --color-primary-dark: #004bcf;
   --color-dark: #000000;
   --color-hide: #262626;
   --color-gray: #a8a8a8;
   --color-white: #ffffff;
+  --color-alert: #f55d5d;
 
   --color-facebook: #3b5998;
-  --color-youtube: #ff0000;
-  --color-twitter: #1da1f2;
   --color-medium: #00ab6c;
-  --color-instagram: #5851db;
+  --color-twitter: #1da1f2;
+  --color-youtube: #ff0000;
   --color-meetup: #e0393e;
-  --color-slack: #e9a820;
-  --color-mailchimp: #6dc5dc;
+  --color-slack: #611e69;
+  --color-instagram: #c60e82;
+  --color-newsletter: #0a63ff;
 
   /* SPACE */
 
