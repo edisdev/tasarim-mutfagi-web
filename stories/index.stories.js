@@ -1,7 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-// import CountCard from '../src/components/CountCard'
+import '../src/components/CountCard/stories'
+import '../src/components/CountCardList/stories'
+import '../src/components/Header/stories'
 
 storiesOf('Atoms|Typography', module)
   .add('Head 1', () => <h1>Tasarımı Tasarımcıların Konuştuğu Oluşum</h1>)
@@ -31,15 +33,6 @@ storiesOf('Atoms|Colors', module).add('Colors', () => (
     <div className="color --white">white</div>
   </div>
 ))
-
-// storiesOf('Molecules|Count Card', module)
-//   .add('Card', () => <CountCard count={123} type="twitter" label="Twitter" />)
-//   .add('Card List', () => (
-//     <div>
-//       <CountCard count={123} label="Twitter" />
-//       <CountCard count={53} label="Youtube" />
-//     </div>
-//   ))
 
 // storiesOf('Atoms|Buttons', module)
 //   .add('White Ghost', () => <BtnWhiteGhost>Bize Yaz</BtnWhiteGhost>)

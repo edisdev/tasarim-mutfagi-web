@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Header from 'components/header'
+import Header from 'components/Header'
+
 import 'style/app.css'
 
 const Layout = ({ children }) => (

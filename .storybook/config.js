@@ -2,6 +2,7 @@ import React from 'react'
 import { addParameters, addDecorator, configure } from '@storybook/react'
 import { create } from '@storybook/theming'
 import { withA11y } from '@storybook/addon-a11y'
+
 import '../src/style/app.css'
 
 function Layout(storyFn) {
@@ -38,6 +39,16 @@ const req = require.context('../stories', true, /\.stories\.js$/)
 
 function loadStories() {
   req.keys().forEach(filename => req(filename))
+}
+
+// https://www.gatsbyjs.org/docs/visual-testing-with-storybook/
+global.___loader = {
+  enqueue: () => {},
+  hovering: () => {}
+}
+global.__PATH_PREFIX__ = ''
+window.___navigate = pathname => {
+  action('NavigateTo:')(pathname)
 }
 
 configure(loadStories, module)

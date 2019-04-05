@@ -1,11 +1,23 @@
 const path = require('path')
 
-module.exports = ({ config, mode }) => {
+module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.css$/,
     loaders: ['postcss-loader'],
     include: path.resolve(__dirname, '../')
   })
+
+  // https://www.gatsbyjs.org/docs/visual-testing-with-storybook/
+  config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
+  config.module.rules[0].use[0].loader = require.resolve('babel-loader')
+  config.module.rules[0].use[0].options.presets = [
+    require.resolve('@babel/preset-react'),
+    require.resolve('@babel/preset-env')
+  ]
+  config.module.rules[0].use[0].options.plugins = [
+    require.resolve('@babel/plugin-proposal-class-properties')
+  ]
+  config.resolve.mainFields = ['browser', 'module', 'main']
 
   return config
 }
