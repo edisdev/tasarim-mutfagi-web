@@ -2,37 +2,37 @@
   {
     "name": "twitter",
     "label": "Twitter",
-    "count": 34,
-    "url": "dasdad"
+    "count": 2143,
+    "url": "https://twitter.com/tasarimmutfagi"
   },
   {
     "name": "youtube",
     "label": "Youtube",
-    "count": 123123,
-    "url": "dasdad"
+    "count": 1336,
+    "url": "https://www.youtube.com/tasarimmutfagi"
   },
   {
     "name": "meetup",
     "label": "Meetup",
-    "count": 123123,
-    "url": "dasdad"
+    "count": 1719,
+    "url": "https://www.meetup.com/tasarimmutfagi/"
   },
   {
     "name": "slack",
     "label": "Slack",
-    "count": 123123,
-    "url": "dasdad"
+    "count": 478,
+    "url": "https://tasarimmutfagi.typeform.com/to/zC7CYX"
   },
   {
     "name": "instagram",
     "label": "Instagram",
-    "count": 123123,
-    "url": "dasdad"
+    "count": 520,
+    "url": "https://www.instagram.com/tasarimmutfagitv/"
   },
   {
-    "name": "mailchimp",
+    "name": "newsletter",
     "label": "Bülten",
-    "count": 123123,
+    "count": 420,
     "url": "dasdad"
   }
 ]
