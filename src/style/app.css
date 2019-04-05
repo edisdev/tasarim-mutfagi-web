@@ -10,22 +10,7 @@
 @import 'typography.css';
 @import 'button.css';
 
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  height: 140px;
-  color: var(--color-white);
-  border: 10px solid var(--color-primary);
-  border-radius: var(--radius);
-
-  &:hover {
-    border-color: var(--color-primary);
-    background-color: var(--color-primary);
-  }
-}
+@import '../components/CountCard/style.css';
 
 .color {
   display: flex;
@@ -44,6 +29,10 @@
     background-color: var(--color-dark);
   }
 
+  &.--hide {
+    background-color: var(--color-hide);
+  }
+
   &.--gray {
     color: var(--color-dark);
     background-color: var(--color-gray);
@@ -52,5 +41,10 @@
   &.--white {
     color: var(--color-dark);
     background-color: var(--color-white);
+  }
+
+  &.--alert {
+    color: var(--color-white);
+    background-color: var(--color-alert);
   }
 }
