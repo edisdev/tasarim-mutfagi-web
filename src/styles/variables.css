@@ -47,10 +47,7 @@
   --fs-h1: 32px;
   --fs-h1-desktop: 48px;
   --fs-h2: 32px;
-  --fs-h3: 32px;
-  --fs-h3-desktop: 24px;
-  --fs-h4: 28px;
-  --fs-h4-desktop: 24px;
-  --fs-h5: 18px;
-  --fs-h6: 16px;
+  --fs-h3: 24px;
+  --fs-h3-desktop: 32px;
+  --fs-h4: 18px;
 }

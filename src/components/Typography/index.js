@@ -16,12 +16,8 @@ function Typography() {
         <h3>YouTube’da Bizi Takip Etmeyi Unutma</h3>
       </li>
       <li>
-        <span>h4</span>
-        <h4>Tasarımı Tasarımcıların Konuştuğu Oluşum</h4>
-      </li>
-      <li>
         <span>h5</span>
-        <h5>Bültenlerden ve Gelişmelerden Haberdar Ol</h5>
+        <h5>Tasarımı Tasarımcıların Konuştuğu Oluşum</h5>
       </li>
       <li>
         <span>p</span>
