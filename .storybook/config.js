@@ -4,12 +4,13 @@ import { create } from '@storybook/theming'
 import { withA11y } from '@storybook/addon-a11y'
 
 import '../src/styles/app.css'
+import './style.css'
 
-function Layout(storyFn) {
-  return <div style={{ padding: '30px' }}>{storyFn()}</div>
-}
+// function Layout(storyFn) {
+//   return <div style={{ padding: '30px' }}>{storyFn()}</div>
+// }
 
-addDecorator(Layout)
+// addDecorator(Layout)
 addDecorator(withA11y)
 
 const theme = create({
@@ -35,12 +36,6 @@ addParameters({
   }
 })
 
-const req = require.context('../stories', true, /\.stories\.js$/)
-
-function loadStories() {
-  req.keys().forEach(filename => req(filename))
-}
-
 // https://www.gatsbyjs.org/docs/visual-testing-with-storybook/
 global.___loader = {
   enqueue: () => {},
@@ -51,4 +46,6 @@ window.___navigate = pathname => {
   action('NavigateTo:')(pathname)
 }
 
-configure(loadStories, module)
+configure(function() {
+  require('./stories')
+}, module)

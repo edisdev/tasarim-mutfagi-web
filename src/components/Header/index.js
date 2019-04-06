@@ -3,9 +3,9 @@ import { Link } from 'gatsby'
 
 function HeaderView({ siteTitle }) {
   return (
-    <div>
+    <header className="Header">
       <Link to="/">{siteTitle}</Link>
-    </div>
+    </header>
   )
 }
 

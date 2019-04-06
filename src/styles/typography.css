@@ -1,7 +1,8 @@
 html {
   font-family: var(--ff-text);
   font-size: var(--fs-body);
-  @media (--tablet) {
+  line-height: var(--line-height);
+  @media (--desktop) {
     font-size: var(--fs-body-desktop);
   }
 }
@@ -13,7 +14,8 @@ html {
 h1,
 .h1 {
   font-size: var(--fs-h1);
-  @media (--tablet) {
+  line-height: var(--line-height-head);
+  @media (--desktop) {
     font-size: var(--fs-h1-desktop);
   }
 }
@@ -21,12 +23,13 @@ h1,
 h2,
 .h2 {
   font-size: var(--fs-h2);
+  line-height: var(--line-height-head);
 }
 
 h3,
 .h3 {
   font-size: var(--fs-h3);
-  @media (--tablet) {
+  @media (--desktop) {
     font-size: var(--fs-h3-desktop);
   }
 }

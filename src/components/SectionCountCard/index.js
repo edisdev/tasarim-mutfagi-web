@@ -1,6 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
+import './style.css'
+
 import CardList from './list'
 
 function Index() {

@@ -1,5 +1,6 @@
 import React from 'react'
-import Icon from '../src/components/Icon'
+import { storiesOf } from '@storybook/react'
+import Icon from '../../components/Icon'
 
 function Icons() {
   return (
@@ -16,4 +17,8 @@ function Icons() {
   )
 }
 
-export default Icons
+storiesOf('Atoms', module).add('Icons', () => (
+  <div className="Space">
+    <Icons />
+  </div>
+))

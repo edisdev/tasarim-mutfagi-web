@@ -1,7 +1,7 @@
 import React from 'react'
-import Icon from '../src/components/Icon'
+import { storiesOf } from '@storybook/react'
 
-function Icons() {
+function Buttons() {
   return (
     <div className="BtnList">
       <button className="Btn Btn-ghost-white">Bize Yazın</button>
@@ -11,4 +11,8 @@ function Icons() {
   )
 }
 
-export default Icons
+storiesOf('Atoms', module).add('Buttons', () => (
+  <div className="Space">
+    <Buttons />
+  </div>
+))

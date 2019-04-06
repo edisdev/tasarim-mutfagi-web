@@ -1,4 +1,5 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 
 function Typography() {
   return (
@@ -41,4 +42,8 @@ function Typography() {
   )
 }
 
-export default Typography
+storiesOf('Atoms', module).add('Typography', () => (
+  <div className="Space">
+    <Typography />
+  </div>
+))

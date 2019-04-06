@@ -1,6 +1,8 @@
 import React from 'react'
 import c from 'classnames'
 
+import './style.css'
+
 function CountCard({ name, label, count, url }) {
   return (
     <a

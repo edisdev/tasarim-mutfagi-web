@@ -7,3 +7,28 @@ a,
 button {
   transition: var(--transition);
 }
+
+.Section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (--desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.c-dark {
+  color: var(--color-dark);
+}
+
+.c-hide {
+  color: var(--color-hide);
+}
+
+.c-gray {
+  color: var(--color-gray);
+}
+
+.c-primary {
+  color: var(--color-primary);
+}

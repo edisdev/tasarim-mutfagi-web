@@ -1,0 +1,20 @@
+.SectionHero {
+  padding-top: 120px;
+
+  @media (--desktop) {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .row {
+      height: 680px;
+      align-items: center;
+    }
+
+    .desc {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 730px;
+    }
+  }
+}

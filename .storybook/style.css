@@ -1,3 +1,7 @@
+.Space {
+  padding: var(--space-4);
+}
+
 .IconList {
   display: flex;
 
@@ -43,7 +47,7 @@
   }
 }
 
-.BtnList{
+.BtnList {
   display: flex;
 
   .Btn {

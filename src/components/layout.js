@@ -6,15 +6,7 @@ import 'styles/app.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
+    query={query}
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
@@ -23,5 +15,15 @@ const Layout = ({ children }) => (
     )}
   />
 )
+
+const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
 
 export default Layout

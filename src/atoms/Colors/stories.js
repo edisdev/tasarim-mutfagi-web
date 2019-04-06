@@ -1,4 +1,5 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 
 function Colors() {
   return (
@@ -13,4 +14,8 @@ function Colors() {
   )
 }
 
-export default Colors
+storiesOf('Atoms', module).add('Colors', () => (
+  <div className="Space">
+    <Colors />
+  </div>
+))

@@ -41,6 +41,9 @@
   --fw-normal: normal; // 500
   --fw-bold: bold; // 600
 
+  --line-height: 1.5;
+  --line-height-head: 1.2;
+
   --fs-body: 16px;
   --fs-body-desktop: 18px;
   --fs-small: 14px;
