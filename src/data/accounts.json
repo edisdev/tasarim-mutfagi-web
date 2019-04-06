@@ -1,38 +1,58 @@
 [
   {
+    "name": "facebook",
+    "label": "Facebook",
+    "count": 0,
+    "url": "",
+    "type": "social-card"
+  },
+  {
     "name": "twitter",
     "label": "Twitter",
     "count": 2143,
-    "url": "https://twitter.com/tasarimmutfagi"
+    "url": "https://twitter.com/tasarimmutfagi",
+    "type": "count-card"
   },
   {
     "name": "youtube",
     "label": "Youtube",
     "count": 1336,
-    "url": "https://www.youtube.com/tasarimmutfagi"
+    "url": "https://www.youtube.com/tasarimmutfagi",
+    "type": "count-card"
   },
   {
     "name": "meetup",
     "label": "Meetup",
     "count": 1719,
-    "url": "https://www.meetup.com/tasarimmutfagi/"
+    "url": "https://www.meetup.com/tasarimmutfagi/",
+    "type": "count-card"
   },
   {
     "name": "slack",
     "label": "Slack",
     "count": 478,
-    "url": "https://tasarimmutfagi.typeform.com/to/zC7CYX"
+    "url": "https://tasarimmutfagi.typeform.com/to/zC7CYX",
+    "type": "count-card"
   },
   {
     "name": "instagram",
     "label": "Instagram",
     "count": 520,
-    "url": "https://www.instagram.com/tasarimmutfagitv/"
+    "url": "https://www.instagram.com/tasarimmutfagitv/",
+    "type": "count-card"
   },
   {
     "name": "newsletter",
     "label": "Bülten",
     "count": 420,
-    "url": "dasdad"
+    "url": "",
+    "type": "count-card"
+  },
+  {
+    "name": "medium",
+    "label": "Medium",
+    "count": 0,
+    "url": "",
+    "type": "social-card"
   }
 ]

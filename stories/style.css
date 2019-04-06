@@ -1,3 +1,11 @@
+.IconList {
+  display: flex;
+
+  svg {
+    margin-right: var(--space-3);
+  }
+}
+
 .Color {
   display: flex;
   align-items: center;
@@ -40,5 +48,23 @@
 
   .Color {
     margin-right: var(--space-3);
+  }
+}
+
+.TypoList {
+  li {
+    position: relative;
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--color-hide);
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: var(--fs-small);
+    padding: var(--space-1);
+    color: var(--color-gray);
+    background-color: var(--color-hide);
   }
 }

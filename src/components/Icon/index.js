@@ -9,19 +9,25 @@ import Medium from './svg/Medium'
 import Instagram from './svg/Instagram'
 import Meetup from './svg/Meetup'
 
-function Colors() {
-  return (
-    <div className="IconList">
-      <Left />
-      <Right />
-      <Facebook />
-      <Youtube />
-      <Twitter />
-      <Medium />
-      <Instagram />
-      <Meetup />
-    </div>
-  )
+function Colors({ name }) {
+  switch (name) {
+    case 'left':
+      return <Left />
+    case 'right':
+      return <Right />
+    case 'facebook':
+      return <Facebook />
+    case 'youtube':
+      return <Youtube />
+    case 'twitter':
+      return <Twitter />
+    case 'medium':
+      return <Medium />
+    case 'instagram':
+      return <Instagram />
+    case 'meetup':
+      return <Meetup />
+  }
 }
 
 export default Colors

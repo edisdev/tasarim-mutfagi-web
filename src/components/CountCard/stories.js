@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import CountCard from './'
 
 import accounts from '../../data/accounts'
-const account = accounts[0]
+const account = accounts.find(o => o.type === 'count-card')
 
 storiesOf('Molecules', module).add('Count Card', () => (
   <CountCard {...account} />

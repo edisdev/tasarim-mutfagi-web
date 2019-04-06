@@ -17,10 +17,6 @@
 @import 'common.css';
 @import 'typography.css';
 
-/* Atoms */
-@import '../components/Icon/style.css';
-@import '../components/Color/style.css';
-@import '../components/Typography/style.css';
-
-/* Molecules */
+/* Components */
+@import '../components/SocialButton/style.css';
 @import '../components/CountCard/style.css';

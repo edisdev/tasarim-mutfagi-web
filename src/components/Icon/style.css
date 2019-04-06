@@ -1,7 +1,0 @@
-.IconList {
-  display: flex;
-
-  svg {
-    margin-right: var(--space-3);
-  }
-}

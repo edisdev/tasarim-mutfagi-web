@@ -1,56 +1,50 @@
-.CountCard {
+.SocialButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  height: 140px;
+  font-size: var(--finger);
+  width: 1em;
+  height: 1em;
   color: var(--color-white);
-  border: 10px solid var(--color-hide);
-  border-radius: var(--radius);
+  border-radius: 50%;
+  background-color: var(--color-hide);
 
   &:hover {
-    background-color: var(--color-hide);
+    background-color: var(--color-gray);
   }
 
   &.--twitter {
     &:hover {
-      border-color: var(--color-twitter);
       background-color: var(--color-twitter);
     }
   }
 
   &.--youtube {
     &:hover {
-      border-color: var(--color-youtube);
       background-color: var(--color-youtube);
     }
   }
 
   &.--meetup {
     &:hover {
-      border-color: var(--color-meetup);
       background-color: var(--color-meetup);
     }
   }
 
   &.--slack {
     &:hover {
-      border-color: var(--color-slack);
       background-color: var(--color-slack);
     }
   }
 
   &.--instagram {
     &:hover {
-      border-color: var(--color-instagram);
       background-color: var(--color-instagram);
     }
   }
 
   &.--newsletter {
     &:hover {
-      border-color: var(--color-newsletter);
       background-color: var(--color-newsletter);
     }
   }
