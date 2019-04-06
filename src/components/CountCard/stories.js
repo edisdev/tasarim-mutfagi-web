@@ -7,5 +7,7 @@ import accounts from '../../data/accounts'
 const account = accounts.find(o => o.type === 'count-card')
 
 storiesOf('Molecules', module).add('Count Card', () => (
-  <CountCard {...account} />
+  <div className="Space">
+    <CountCard {...account} />
+  </div>
 ))
