@@ -2,6 +2,7 @@ import React from 'react'
 
 import '../src/components/Color/stories'
 import '../src/components/Typography/stories'
+import '../src/components/Icon/stories'
 import '../src/components/CountCard/stories'
 import '../src/components/CountCardList/stories'
 import '../src/components/Header/stories'

@@ -4,6 +4,6 @@ import { storiesOf } from '@storybook/react'
 import CountCardList from './list'
 import accounts from '../../data/accounts'
 
-storiesOf('Molecules|Count Card List', module).add('Card', () => (
+storiesOf('Organism', module).add('Count Card List', () => (
   <CountCardList data={accounts} />
 ))

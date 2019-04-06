@@ -1,0 +1,44 @@
+.Color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  border-radius: var(--radius);
+
+  &.--primary {
+    background-color: var(--color-primary);
+  }
+
+  &.--dark {
+    background-color: var(--color-dark);
+  }
+
+  &.--hide {
+    background-color: var(--color-hide);
+  }
+
+  &.--gray {
+    color: var(--color-dark);
+    background-color: var(--color-gray);
+  }
+
+  &.--white {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+  }
+
+  &.--alert {
+    color: var(--color-white);
+    background-color: var(--color-alert);
+  }
+}
+
+.ColorList {
+  display: flex;
+
+  .Color {
+    margin-right: var(--space-3);
+  }
+}
