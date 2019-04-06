@@ -3,7 +3,7 @@ import { addParameters, addDecorator, configure } from '@storybook/react'
 import { create } from '@storybook/theming'
 import { withA11y } from '@storybook/addon-a11y'
 
-import '../src/style/app.css'
+import '../src/styles/app.css'
 
 function Layout(storyFn) {
   return <div style={{ padding: '30px' }}>{storyFn()}</div>

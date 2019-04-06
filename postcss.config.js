@@ -7,7 +7,7 @@ module.exports = {
     'postcss-for': {},
     'postcss-custom-media': {
       importFrom: [
-        'src/style/viewport.css'
+        'src/styles/viewport.css'
       ]
     }
   }
