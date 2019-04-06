@@ -1,4 +1,4 @@
-.btn {
+@define-placeholder BaseBtn {
   cursor: pointer;
   position: relative;
   user-select: none;
@@ -6,25 +6,53 @@
   align-items: center;
   justify-content: center;
   height: var(--finger);
+  min-width: var(--finger);
+  color: var(--color-white);
+}
+
+.Btn {
+  @extend BaseBtn;
   padding-left: 30px;
   padding-right: 30px;
   font-weight: var(--fw-bold);
   font-size: var(--fs-small);
   text-transform: uppercase;
-  color: var(--color-white);
   background: transparent;
   border-radius: var(--radius);
 
-  &.--ghost-white {
-    border: 1px solid var(--color-white);
+  &-primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
   }
 
-  &.--ghost-primary {
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
-  }
+  &-ghost {
+    &-white {
+      border: 1px solid var(--color-white);
 
-  &.--fill-primary {
-    background: var(--color-primary);
+      &:hover {
+        color: var(--color-primary);
+        background-color: var(--color-white);
+      }
+    }
+
+    &-primary {
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+
+      &:hover {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+      }
+    }
   }
+}
+
+.BtnIcon {
+  @extend BaseBtn;
+  border-radius: 50%;
+  background-color: var(--color-hide);
 }

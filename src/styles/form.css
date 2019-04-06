@@ -1,0 +1,14 @@
+.Txt {
+  height: var(--finger);
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-white);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+  outline: 0;
+  border-radius: var(--radius);
+
+  &.--alert {
+    border-width: 2px;
+    border-color: var(--color-alert);
+  }
+}

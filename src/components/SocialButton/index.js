@@ -1,9 +1,10 @@
 import React from 'react'
+import c from 'classnames'
 
-function SocialButton({ url, children }) {
+function SocialButton({ name, url, children }) {
   return (
     <a
-      className="SocialButton"
+      className={c('BtnIcon', 'SocialButton', `--${name}`)}
       href={url}
       target="_blank"
       rel="noopener noreferrer"

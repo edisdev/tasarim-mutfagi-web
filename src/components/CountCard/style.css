@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 20px;
   height: 140px;
   color: var(--color-white);
   border: 10px solid var(--color-hide);

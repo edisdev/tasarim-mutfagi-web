@@ -1,21 +1,7 @@
 .SocialButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--finger);
-  width: 1em;
-  height: 1em;
-  color: var(--color-white);
-  border-radius: 50%;
-  background-color: var(--color-hide);
-
-  &:hover {
-    background-color: var(--color-gray);
-  }
-
-  &.--twitter {
+  &.--facebook {
     &:hover {
-      background-color: var(--color-twitter);
+      background-color: var(--color-facebook);
     }
   }
 
@@ -25,15 +11,15 @@
     }
   }
 
-  &.--meetup {
+  &.--twitter {
     &:hover {
-      background-color: var(--color-meetup);
+      background-color: var(--color-twitter);
     }
   }
 
-  &.--slack {
+  &.--medium {
     &:hover {
-      background-color: var(--color-slack);
+      background-color: var(--color-medium);
     }
   }
 
@@ -43,9 +29,9 @@
     }
   }
 
-  &.--newsletter {
+  &.--meetup {
     &:hover {
-      background-color: var(--color-newsletter);
+      background-color: var(--color-meetup);
     }
   }
 }
