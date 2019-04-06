@@ -2,9 +2,20 @@
   font-weight: var(--fw-normal);
 }*/
 
+html {
+  font-family: var(--ff-text);
+  font-size: var(--fs-body);
+  @media (--desktop) {
+    font-size: var(--fs-body-desktop);
+  }
+}
+
 h1,
 .h1 {
   font-size: var(--fs-h1);
+  @media (--desktop) {
+    font-size: var(--fs-h1-desktop);
+  }
 }
 
 h2,
@@ -15,11 +26,17 @@ h2,
 h3,
 .h3 {
   font-size: var(--fs-h3);
+  @media (--desktop) {
+    font-size: var(--fs-h3-desktop);
+  }
 }
 
 h4,
 .h4 {
   font-size: var(--fs-h4);
+  @media (--desktop) {
+    font-size: var(--fs-h4-desktop);
+  }
 }
 
 h5,
@@ -30,6 +47,15 @@ h5,
 h6,
 .h6 {
   font-size: var(--fs-h6);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: var(--fw-bold);
 }
 
 small,

@@ -3,6 +3,12 @@ module.exports = {
   plugins: {
     autoprefixer: {},
     'postcss-import': {},
-    'postcss-nested': {}
+    'postcss-nested': {},
+    'postcss-for': {},
+    'postcss-custom-media': {
+      importFrom: [
+        'src/style/viewport.css'
+      ]
+    }
   }
 }

@@ -1,6 +1,4 @@
 html {
-  font-family: var(--ff-text);
-  font-size: var(--fs-body);
   color: var(--color-white);
   background-color: var(--color-dark);
 }
