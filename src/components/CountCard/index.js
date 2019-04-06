@@ -4,13 +4,13 @@ import c from 'classnames'
 function CountCard({ name, label, count, url }) {
   return (
     <a
-      className={c('card', `--${name}`)}
+      className={c('CountCard', `--${name}`)}
       href={url}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span>{count}</span>
-      <span>{label}</span>
+      <p className="h4 mb-1">{count}</p>
+      <p>{label}</p>
     </a>
   )
 }

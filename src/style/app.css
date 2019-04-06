@@ -9,12 +9,13 @@
 @import 'grid.css';
 //@import 'grid-order.css';
 //@import 'grid-helper.css';
+@import 'space.css';
+//@import 'utilities.css';
+//@import 'button.css';
 
 /* Global */
 @import 'common.css';
 @import 'typography.css';
-//@import 'utilities.css';
-//@import 'button.css';
 
 /* Atoms */
 @import '../components/Icon/style.css';

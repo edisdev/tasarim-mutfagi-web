@@ -1,0 +1,29 @@
+@for $i from 0 to 6 {
+  .mt-$(i) {
+    margin-top: var(--space-$(i)) !important;
+  }
+  .mr-$(i) {
+    margin-right: var(--space-$(i)) !important;
+  }
+  .mb-$(i) {
+    margin-bottom: var(--space-$(i)) !important;
+  }
+  .ml-$(i) {
+    margin-left: var(--space-$(i)) !important;
+  }
+}
+
+@for $i from 0 to 6 {
+  .pt-$(i) {
+    margin-top: var(--space-$(i)) !important;
+  }
+  .pr-$(i) {
+    margin-right: var(--space-$(i)) !important;
+  }
+  .pb-$(i) {
+    margin-bottom: var(--space-$(i)) !important;
+  }
+  .pl-$(i) {
+    margin-left: var(--space-$(i)) !important;
+  }
+}
