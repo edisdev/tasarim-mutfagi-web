@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import CountCardList from 'components/CountCardList'
+import CountCardList from 'components/SectionCountCard'
 
 const IndexPage = () => (
   <Layout>

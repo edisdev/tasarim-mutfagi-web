@@ -12,5 +12,5 @@ storiesOf('Atoms', module).add('Icons', () => <Icons />)
 
 import '../src/components/SocialButton/stories'
 import '../src/components/CountCard/stories'
-import '../src/components/CountCardList/stories'
+import '../src/components/SectionCountCard/stories'
 import '../src/components/Header/stories'
