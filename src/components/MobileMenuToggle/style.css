@@ -1,0 +1,22 @@
+.mobile-menu-toggle {
+  outline: 0;
+
+  span {
+    transition: var(--transition);
+    pointer-events: none;
+    position: absolute;
+  }
+  .close {
+    opacity: 0;
+    transform: rotate(60deg);
+  }
+
+  &.--show .close {
+    opacity: 1;
+    transform: rotate(0);
+  }
+  &.--show .menu {
+    opacity: 0;
+    transform: rotate(-60deg);
+  }
+}

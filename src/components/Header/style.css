@@ -1,13 +1,50 @@
 .Header {
+  z-index: 100;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
 
-  .container {
-    height: 120px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  &-body {
+    z-index: 100;
+    position: relative;
+
+    .container {
+      height: 120px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-menu {
+    display: none;
+    z-index: 90;
+    position: fixed;
+    padding-top: 120px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-dark);
+  }
+
+  &.mobile-menu-show &-menu {
+    display: block;
+  }
+
+  .mobile-menu-toggle {
+    z-index: 100;
+    position: relative;
+    @media (--desktop) {
+      display: none !important;
+    }
+  }
+
+  .NavigationDesktop {
+    display: none;
+    @media (--desktop) {
+      display: block !important;
+    }
   }
 }
