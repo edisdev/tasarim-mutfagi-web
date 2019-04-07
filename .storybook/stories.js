@@ -6,6 +6,7 @@ import '../src/atoms/Buttons/stories'
 
 import '../src/components/SocialButton/stories'
 import '../src/components/CountCard/stories'
+import '../src/components/Navigation/stories'
 
 import '../src/components/SectionHero/stories'
 import '../src/components/SectionCountCard/stories'

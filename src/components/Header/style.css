@@ -1,0 +1,13 @@
+.Header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  .container {
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

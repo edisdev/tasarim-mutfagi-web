@@ -1,5 +1,7 @@
 import React from 'react'
 import CountCard from '../CountCard'
+import './style.css'
+
 
 function CountCol({ name, label, url, count }) {
   return (

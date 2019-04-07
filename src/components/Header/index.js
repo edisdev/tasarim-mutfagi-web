@@ -1,12 +1,32 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
-function HeaderView({ siteTitle }) {
+import Content from './content'
+
+function HeaderWrapper() {
   return (
-    <header className="Header">
-      <Link to="/">{siteTitle}</Link>
-    </header>
+    <StaticQuery
+      query={query}
+      render={data => {
+        const edges = data.allNavigationJson.edges.map(o => o.node)
+        return <Content data={edges} />
+      }}
+    />
   )
 }
 
-export default HeaderView
+const query = graphql`
+  {
+    allNavigationJson {
+      edges {
+        node {
+          id
+          label
+          url
+        }
+      }
+    }
+  }
+`
+
+export default HeaderWrapper

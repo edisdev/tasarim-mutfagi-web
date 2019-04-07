@@ -1,8 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import HeaderView from './index'
+import Content from './content'
+import navigation from '../../data/navigation'
 
-storiesOf('Organism', module).add('Header', () => (
-  <HeaderView siteTitle="Hey" />
-))
+storiesOf('Organism', module).add('Header', () => <Content data={navigation} />)
