@@ -33,6 +33,8 @@ function Icon({ name }) {
       return <Menu />
     case 'close':
       return <Close />
+    default:
+      return <></>
   }
 }
 
