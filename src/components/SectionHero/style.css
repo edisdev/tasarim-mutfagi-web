@@ -1,13 +1,66 @@
 .SectionHero {
-  padding-top: 120px;
-
+  padding-top: 0;
+  padding-bottom: 0;
   @media (--desktop) {
     text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
+  }
 
-    .row {
+  .container {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    position: relative;
+    @media (--desktop) {
+      padding-top: 50px;
+      padding-bottom: 0;
       height: 680px;
+    }
+  }
+
+  [class*='bg-'] {
+    pointer-events: none;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .bg-desktop {
+    &-1 {
+      left: 0;
+      top: 80px;
+      @media (--desktop) {
+        left: 80px;
+        top: 60px;
+      }
+    }
+    &-2 {
+      right: -305px;
+      top: -85px;
+      @media (--desktop) {
+        right: -230px;
+        top: -165px;
+      }
+    }
+    &-3 {
+      display: none;
+      @media (--desktop) {
+        display: block;
+        left: 50%;
+        margin-left: -170px;
+        top: 600px;
+      }
+    }
+    &-4 {
+      left: -230px;
+      top: 230px;
+      @media (--desktop) {
+        left: -230px;
+        top: 360px;
+      }
+    }
+  }
+
+  @media (--desktop) {
+    .row {
+      height: 100%;
       align-items: center;
     }
 
