@@ -10,5 +10,6 @@ import '../src/components/MobileMenuToggle/stories'
 import '../src/components/Navigation/stories'
 
 import '../src/components/SectionHero/stories'
+import '../src/components/SectionSlider/stories'
 import '../src/components/SectionCountCard/stories'
 import '../src/components/Header/stories'

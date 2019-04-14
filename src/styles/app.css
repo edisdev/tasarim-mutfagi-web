@@ -9,6 +9,9 @@
 @import 'grid.css';
 @import 'space.css';
 
+/* Plugin */
+@import 'flickity.css';
+
 /* Global */
 @import 'common.css';
 @import 'typography.css';
