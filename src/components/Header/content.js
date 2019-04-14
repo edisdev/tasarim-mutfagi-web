@@ -11,7 +11,7 @@ class Header extends Component {
     isShow: false
   }
 
-  onToggleMenu = () => {
+  onToggle = () => {
     this.setState(prevState => ({
       isShow: !prevState.isShow
     }))
@@ -27,10 +27,7 @@ class Header extends Component {
           <div className="Header-body">
             <div className="container">
               <img src={logo} alt="Tasarım Mutfağı" />
-              <MobileMenuToggle
-                onToggleMenu={this.onToggleMenu}
-                isShow={isShow}
-              />
+              <MobileMenuToggle onToggle={this.onToggle} isActive={isShow} />
               <Navigation data={data} />
             </div>
           </div>

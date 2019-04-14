@@ -6,17 +6,20 @@
     pointer-events: none;
     position: absolute;
   }
+
   .close {
     opacity: 0;
     transform: rotate(60deg);
   }
 
-  &.--show .close {
-    opacity: 1;
-    transform: rotate(0);
-  }
-  &.--show .menu {
-    opacity: 0;
-    transform: rotate(-60deg);
+  &.--active {
+    .close {
+      opacity: 1;
+      transform: rotate(0);
+    }
+    .menu {
+      opacity: 0;
+      transform: rotate(-60deg);
+    }
   }
 }
