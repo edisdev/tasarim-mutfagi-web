@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div className="Section SectionHero">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row">
           <div className="col-12">
             {/* content */}
             <h1>Tasarımı Tasarımcıların Konuştuğu Oluşum</h1>
