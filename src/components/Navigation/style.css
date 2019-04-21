@@ -11,10 +11,7 @@
 
     &-link {
       position: relative;
-
-      & + .Navigation-link {
-        margin-bottom: var(--space-2);
-      }
+      margin-bottom: var(--space-2);
     }
   }
 
@@ -30,7 +27,7 @@
       top: 97px;
     }
     &-2 {
-      left: 216px;
+      right: -80px;
       top: 223px;
     }
   }

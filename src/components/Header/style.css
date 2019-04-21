@@ -21,7 +21,6 @@
     display: none;
     z-index: 90;
     position: fixed;
-    padding-top: 120px;
     left: 0;
     right: 0;
     top: 0;
@@ -29,6 +28,11 @@
     background-color: var(--color-dark);
     @media (--desktop) {
       display: none !important;
+    }
+
+    .container {
+      position: relative;
+      padding-top: 230px;
     }
   }
 
