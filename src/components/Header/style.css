@@ -27,6 +27,9 @@
     top: 0;
     bottom: 0;
     background-color: var(--color-dark);
+    @media (--desktop) {
+      display: none !important;
+    }
   }
 
   &.mobile-menu-show &-menu {

@@ -16,13 +16,13 @@
     }
   }
 
-  [class*='bg-'] {
+  [class*='home-bubble-'] {
     pointer-events: none;
     z-index: -1;
     position: absolute;
   }
 
-  .bg-desktop {
+  .home-bubble {
     &-1 {
       left: 0;
       top: 80px;

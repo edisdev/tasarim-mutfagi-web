@@ -17,6 +17,23 @@
       }
     }
   }
+
+  [class*='nav-bubble-'] {
+    pointer-events: none;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .nav-bubble {
+    &-1 {
+      left: 36px;
+      top: 97px;
+    }
+    &-2 {
+      left: 216px;
+      top: 223px;
+    }
+  }
 }
 
 .NavigationDesktop {
