@@ -12,13 +12,17 @@
 
 .Btn {
   @extend BaseBtn;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
   font-weight: var(--fw-bold);
   font-size: var(--fs-small);
   text-transform: uppercase;
   background: transparent;
   border-radius: var(--radius);
+  @media (--desktop) {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
 
   &-primary {
     color: var(--color-white);
