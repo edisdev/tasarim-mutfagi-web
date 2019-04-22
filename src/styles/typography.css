@@ -2,9 +2,6 @@ html {
   font-family: var(--ff-text);
   font-size: var(--fs-body);
   line-height: var(--line-height);
-  @media (--lg) {
-    font-size: var(--fs-body-desktop);
-  }
 }
 
 /*input, textarea, select, button {
@@ -21,9 +18,6 @@ h1,
 .h1 {
   font-size: var(--fs-h1);
   line-height: var(--line-height-head);
-  @media (--lg) {
-    font-size: var(--fs-h1-desktop);
-  }
 }
 
 h2,
@@ -36,9 +30,6 @@ h3,
 .h3 {
   font-size: var(--fs-h3);
   line-height: var(--line-height-head);
-  @media (--lg) {
-    font-size: var(--fs-h3-desktop);
-  }
 }
 
 h4,

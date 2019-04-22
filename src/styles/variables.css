@@ -45,13 +45,18 @@
   --line-height: 1.5;
   --line-height-head: 1.2;
 
-  --fs-body: 16px;
-  --fs-body-desktop: 18px;
   --fs-small: 14px;
+  --fs-body: 16px;
   --fs-h1: 32px;
-  --fs-h1-desktop: 48px;
   --fs-h2: 32px;
   --fs-h3: 24px;
-  --fs-h3-desktop: 32px;
   --fs-h4: 18px;
+}
+
+@media (--lg) {
+  :root {
+    --fs-body: 18px;
+    --fs-h1: 48px;
+    --fs-h3: 32px;
+  }
 }
