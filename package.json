@@ -4,10 +4,24 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Adem ilter <ademilter@gmail.com>",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "netlify": "npm run build && npm run build-storybook",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -o public/storybook"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.3.3",
-    "gatsby-cli": "^2.5.7",
+    "gatsby-cli": "^2.5.9",
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-manifest": "^2.0.25",
     "gatsby-plugin-offline": "^2.0.25",
@@ -44,25 +58,11 @@
     "postcss-nested": "^4.1.2",
     "prettier": "^1.16.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "netlify": "npm run build && npm run build-storybook",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -o public/storybook"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ademilter/tasarim-mutfagi-web"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ademilter/tasarim-mutfagi-web/issues"
   }
 }
