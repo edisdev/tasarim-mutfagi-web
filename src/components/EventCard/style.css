@@ -1,0 +1,84 @@
+.EventCard {
+  --dot-size: 22px;
+  position: relative;
+  max-width: 400px;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: var(--dot-size);
+    width: 1em;
+    height: 1em;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-dark);
+    border-radius: 50%;
+  }
+
+  &:after {
+    left: 100%;
+  }
+
+  &-body {
+    display: grid;
+    grid-template-columns: 70px 1fr 36px;
+    align-items: center;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border-radius: var(--radius);
+    padding-left: calc(var(--dot-size) / 2);
+    padding-right: calc(var(--dot-size) / 2);
+  }
+
+  &-date {
+    text-align: center;
+    padding: var(--space-3);
+
+    span {
+      display: block;
+      line-height: 1;
+    }
+
+    &-day {
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-bold);
+      color: var(--color-primary);
+    }
+
+    &-month {
+      margin-top: var(--space-1);
+      font-size: var(--fs-small);
+      text-transform: uppercase;
+    }
+  }
+
+  &-info {
+    transition: var(--transition);
+    padding: var(--space-3);
+    border-left: 1px dashed var(--color-dark);
+  }
+
+  &-arrow {
+    svg {
+      color: var(--color-primary);
+      transition: var(--transition);
+    }
+  }
+
+  &-link {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* HOVER */
+
+  &:hover &-info {
+    border-left-width: 3px;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import EventCard from '../../components/EventCard'
 
 function EventContent() {
   return (
@@ -10,7 +11,9 @@ function EventContent() {
         birbirinden değerli tasarımcıları dinliyoruz ve kaynaşıyoruz.
       </p>
       {/* event card */}
-      <div className="mt-5">this come here event card</div>
+      <div className="mt-5">
+        <EventCard />
+      </div>
       {/* buttons */}
       <div className="mt-5">
         <button className="Btn Btn-primary mr-3">Tüm Etkinlikler</button>
