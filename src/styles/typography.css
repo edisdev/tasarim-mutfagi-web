@@ -11,6 +11,12 @@ html {
   font-weight: var(--fw-normal);
 }*/
 
+.h1,
+.h2,
+.h3 {
+  font-weight: var(--fw-bold);
+}
+
 h1,
 .h1 {
   font-size: var(--fs-h1);
@@ -35,16 +41,16 @@ h3,
   }
 }
 
-h5,
-.h5 {
+h4,
+.h4 {
   font-size: var(--fs-h4);
   font-weight: var(--fw-normal);
 }
 
-.h1,
-.h2,
-.h3 {
-  font-weight: var(--fw-bold);
+h5,
+.h5 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-normal);
 }
 
 small,
