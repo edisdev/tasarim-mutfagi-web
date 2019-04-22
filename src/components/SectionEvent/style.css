@@ -1,0 +1,23 @@
+.SectionEvent {
+  > .container {
+    position: relative;
+  }
+
+  &-content {
+    @media (--md) {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &-photos {
+    display: none;
+    @media (--md) {
+      display: block;
+    }
+
+    [class*='col-'] {
+      margin-bottom: 30px;
+    }
+  }
+}
