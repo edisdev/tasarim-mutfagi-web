@@ -1,6 +1,7 @@
 .SectionHero {
   padding-top: 0;
   padding-bottom: 0;
+  overflow-x: hidden;
   @media (--lg) {
     text-align: center;
   }

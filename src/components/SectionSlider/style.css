@@ -1,5 +1,6 @@
 .SectionSlider {
   padding-top: 0;
+  overflow: hidden;
 
   .flickity-viewport {
     overflow: visible !important;
