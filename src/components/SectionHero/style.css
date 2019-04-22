@@ -1,14 +1,14 @@
 .SectionHero {
   padding-top: 0;
   padding-bottom: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   @media (--lg) {
     text-align: center;
   }
 
   .container {
     padding-top: 140px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     position: relative;
     @media (--lg) {
       padding-top: 40px;
