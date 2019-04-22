@@ -23,5 +23,9 @@
     [class*='col-'] {
       margin-bottom: 30px;
     }
+
+    img {
+      border-radius: var(--radius);
+    }
   }
 }
