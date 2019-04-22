@@ -1,7 +1,7 @@
 .SectionHero {
   padding-top: 0;
   padding-bottom: 0;
-  @media (--desktop) {
+  @media (--lg) {
     text-align: center;
   }
 
@@ -9,10 +9,10 @@
     padding-top: 140px;
     padding-bottom: 60px;
     position: relative;
-    @media (--desktop) {
-      padding-top: 50px;
+    @media (--lg) {
+      padding-top: 40px;
       padding-bottom: 0;
-      height: 680px;
+      height: 700px;
     }
   }
 
@@ -26,7 +26,7 @@
     &-1 {
       left: 0;
       top: 80px;
-      @media (--desktop) {
+      @media (--lg) {
         left: 80px;
         top: 60px;
       }
@@ -34,14 +34,14 @@
     &-2 {
       right: -305px;
       top: -85px;
-      @media (--desktop) {
+      @media (--lg) {
         right: -230px;
         top: -165px;
       }
     }
     &-3 {
       display: none;
-      @media (--desktop) {
+      @media (--lg) {
         display: block;
         left: 50%;
         margin-left: -170px;
@@ -51,14 +51,14 @@
     &-4 {
       left: -230px;
       top: 230px;
-      @media (--desktop) {
+      @media (--lg) {
         left: -230px;
         top: 360px;
       }
     }
   }
 
-  @media (--desktop) {
+  @media (--lg) {
     .row {
       height: 100%;
       align-items: center;

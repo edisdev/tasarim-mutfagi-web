@@ -1,4 +1,6 @@
 .SectionSlider {
+  padding-top: 0;
+
   .flickity-viewport {
     overflow: visible !important;
   }
@@ -11,7 +13,7 @@
     color: var(--color-dark);
     background-color: var(--color-white);
     transition: var(--transition-slow);
-    @media (--desktop) {
+    @media (--lg) {
       height: 300px;
       padding: var(--space-5);
       display: grid;
@@ -23,7 +25,7 @@
     &-logo {
       width: 80px;
       margin-bottom: var(--space-4);
-      @media (--desktop) {
+      @media (--lg) {
         margin-bottom: 0;
         width: 95px;
         justify-self: center;

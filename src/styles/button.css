@@ -19,7 +19,7 @@
   text-transform: uppercase;
   background: transparent;
   border-radius: var(--radius);
-  @media (--desktop) {
+  @media (--lg) {
     padding-left: var(--space-5);
     padding-right: var(--space-5);
   }

@@ -8,12 +8,16 @@ button {
   transition: var(--transition);
 }
 
+::selection {
+  background-color: var(--color-primary);
+}
+
 .Section {
   padding-top: 40px;
   padding-bottom: 40px;
-  @media (--desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @media (--lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 

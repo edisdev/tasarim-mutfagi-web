@@ -21,7 +21,7 @@ class Section extends React.Component {
       <div className="Section SectionSlider">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-10 offset-md-1">
+            <div className="col-12 col-lg-10 offset-lg-1">
               {Flickity && <Slider Flickity={Flickity} />}
             </div>
           </div>
