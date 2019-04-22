@@ -1,0 +1,23 @@
+.SectionWhy {
+  @media (--sm) {
+    padding-top: 0;
+  }
+
+  &-list {
+    .row {
+      flex-wrap: nowrap;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+      @media (--sm) {
+        flex-wrap: wrap;
+        overflow: visible;
+      }
+    }
+
+    [class*='col-'] {
+      @media (--sm) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

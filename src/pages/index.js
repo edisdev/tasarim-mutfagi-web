@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import SectionHero from 'components/SectionHero'
 import SectionSlider from 'components/SectionSlider'
 import SectionEvent from 'components/SectionEvent'
+import SectionWhy from 'components/SectionWhy'
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <SectionHero />
     <SectionSlider />
     <SectionEvent />
+    <SectionWhy />
   </Layout>
 )
 

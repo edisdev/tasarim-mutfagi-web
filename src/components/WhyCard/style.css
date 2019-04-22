@@ -1,0 +1,27 @@
+.WhyCard {
+  padding: var(--space-5);
+  border: 10px solid var(--color-hide);
+  border-radius: var(--radius);
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--color-dark);
+    border-color: var(--color-white);
+    background-color: var(--color-white);
+  }
+
+  &-desc {
+    margin-top: var(--space-3);
+    color: var(--color-gray);
+  }
+
+  /* hover */
+
+  &:hover &-title {
+    color: var(--color-primary);
+  }
+
+  &:hover &-desc {
+    color: var(--color-dark);
+  }
+}
