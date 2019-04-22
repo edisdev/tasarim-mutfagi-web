@@ -2,23 +2,32 @@
   .flickity-viewport {
     overflow: visible !important;
   }
+
   .SliderItem {
     opacity: 0.5;
     width: 100%;
-    height: 300px;
+    padding: var(--space-4);
     margin-right: 10px;
     color: var(--color-dark);
     background-color: var(--color-white);
     transition: var(--transition-slow);
-    padding: var(--space-5);
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    align-items: center;
-    gap: var(--space-5);
+    @media (--desktop) {
+      height: 300px;
+      padding: var(--space-5);
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      grid-gap: var(--space-5);
+      align-items: center;
+    }
 
     &-logo {
-      width: 95px;
-      justify-self: center;
+      width: 80px;
+      margin-bottom: var(--space-4);
+      @media (--desktop) {
+        margin-bottom: 0;
+        width: 95px;
+        justify-self: center;
+      }
     }
 
     &-body {

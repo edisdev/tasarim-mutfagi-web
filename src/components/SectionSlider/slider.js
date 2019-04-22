@@ -36,7 +36,7 @@ const SliderData = [
     logo: Youtube,
     title: 'YouTube’da Bizi Takip Etmeyi Unutma',
     desc:
-      'Birbirinden farklı konuklar ve konularda YouTube kanalımızda tasarıma dair her şeyi konuşuyoruz.',
+      'Birbirinden farklı konuklar ve konularda YouTube kanalımızda',
     action: {
       text: 'Abone Ol',
       link: ''
