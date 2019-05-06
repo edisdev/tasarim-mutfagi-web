@@ -34,7 +34,7 @@ function EventPhotos({ photos }) {
             </div>
           </div>
         </div>
-        <div className="col-5">
+        <div className="col-4">
           <div className="row">
             <div className="col-12">
               <Image fluid={photos[7].childImageSharp.fluid} />
