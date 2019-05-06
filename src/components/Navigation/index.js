@@ -3,8 +3,8 @@ import c from 'classnames'
 import { Link } from 'gatsby'
 import './style.css'
 
-import NavBubble1 from '../../images/nav-bubble-1.png'
-import NavBubble2 from '../../images/nav-bubble-2.png'
+import NavBubble1 from '../../images/nav/bubble-1.png'
+import NavBubble2 from '../../images/nav/bubble-2.png'
 
 function Navigation({ data, isMobile }) {
   return (

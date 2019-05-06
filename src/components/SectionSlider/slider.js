@@ -1,5 +1,5 @@
 import React from 'react'
-import Youtube from '../../images/home-slider-youtube.png'
+import Youtube from '../../images/sliders/youtube.png'
 
 const flickityOptions = {
   selectedAttraction: 0.2,
