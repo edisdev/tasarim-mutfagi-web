@@ -1,0 +1,13 @@
+.SectionSupport {
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

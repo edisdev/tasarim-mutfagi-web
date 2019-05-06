@@ -6,6 +6,7 @@ import SectionHero from 'components/SectionHero'
 import SectionSlider from 'components/SectionSlider'
 import SectionEvent from 'components/SectionEvent'
 import SectionWhy from 'components/SectionWhy'
+import SectionSupport from 'components/SectionSupport'
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <SectionSlider />
     <SectionEvent />
     <SectionWhy />
+    <SectionSupport />
   </Layout>
 )
 
