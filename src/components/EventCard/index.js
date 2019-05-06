@@ -3,7 +3,7 @@ import Icon from '../Icon'
 
 import './style.css'
 
-function EventCard({}) {
+function EventCard() {
   return (
     <div className="EventCard">
       <div className="EventCard-body">
@@ -21,11 +21,11 @@ function EventCard({}) {
         </div>
       </div>
       <a
-        className="EventCard-link"
+        className="EventCard-link text-hide"
         href="/"
         target="_blank"
         rel="noopener noreferrer"
-      />
+      >Open new link</a>
     </div>
   )
 }
