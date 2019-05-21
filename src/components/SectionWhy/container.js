@@ -14,7 +14,7 @@ function Why({ data }) {
               <div className="row">
                 {data.map(item => (
                   <div key={item.id} className="col-10 col-sm-6 col-lg-4">
-                    <WhyCard {...item} />
+                    <WhyCard {...item.frontmatter} />
                   </div>
                 ))}
               </div>

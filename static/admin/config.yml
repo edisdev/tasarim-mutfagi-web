@@ -39,3 +39,20 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
+  # Slider #######################
+  - name: 'slider'
+    label: 'Slider'
+    folder: 'data/slider'
+    create: true
+    slug: '{{slug}}'
+    identifier_field: title
+    fields:
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - label: "CTA Button"
+        name: "button"
+        widget: "object"
+        fields:
+          - { label: "Text", name: "text", widget: "string" }
+          - { label: "Url", name: "url", widget: "string" }

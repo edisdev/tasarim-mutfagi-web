@@ -4,21 +4,31 @@ import { StaticQuery, graphql } from 'gatsby'
 import SectionWhy from './container'
 
 function Query() {
-  return <div>asd</div>
+  return (
+    <StaticQuery
+      query={query}
+      render={data => {
+        const edges = data.allMarkdownRemark.edges.map(o => o.node)
+        return <SectionWhy data={edges} />
+      }}
+    />
+  )
 }
 
-// const query = graphql`
-//   {
-//     allWhyJson {
-//       edges {
-//         node {
-//           id
-//           title
-//           desc
-//         }
-//       }
-//     }
-//   }
-// `
+const query = graphql`
+  {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//why//" } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Query
