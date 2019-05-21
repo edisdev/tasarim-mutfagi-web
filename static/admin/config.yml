@@ -6,6 +6,7 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  # Supports #######################
   - name: 'support'
     label: 'Supports'
     folder: 'data/support'
@@ -16,3 +17,25 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
       - { label: 'Logo', name: 'logo', widget: 'image' }
+  # Testimonials #######################
+  - name: 'testimonial'
+    label: 'Testimonials'
+    folder: 'data/testimonial'
+    create: true
+    slug: '{{slug}}'
+    identifier_field: fullName
+    fields:
+      - { label: 'Photo', name: 'photo', widget: 'image' }
+      - { label: 'Full Name', name: 'fullName', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Comment', name: 'comment', widget: 'text' }
+  # Why #######################
+  - name: 'why'
+    label: 'Why'
+    folder: 'data/why'
+    create: true
+    slug: '{{slug}}'
+    identifier_field: title
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }

@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import SocialButton from './'
 import Icon from '../Icon'
 
-import accounts from '../../data/accounts'
+import accounts from '../../../data/accounts'
 const account = accounts.find(o => o.type === 'social-card')
 
 storiesOf('Molecules', module).add('Social Button', () => (
