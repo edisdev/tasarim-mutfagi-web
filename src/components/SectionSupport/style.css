@@ -1,16 +1,4 @@
 .SectionSupport {
-  &-list {
-    //.row {
-    //  flex-wrap: nowrap;
-    //  overflow: scroll;
-    //  -webkit-overflow-scrolling: touch;
-    //  @media (--sm) {
-    //    flex-wrap: wrap;
-    //    overflow: visible;
-    //  }
-    //}
-  }
-
   &-logo {
     display: flex;
     align-items: center;
