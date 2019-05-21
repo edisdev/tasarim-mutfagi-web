@@ -1,6 +1,6 @@
 ---
 title: Sherpa
-url: 'http://sherpa.blog'
+url: 'https://sherpa.blog/'
 logo: /img/sherpa.svg
 ---
 
