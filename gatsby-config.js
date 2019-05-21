@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-transformer-json`,
+    'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
