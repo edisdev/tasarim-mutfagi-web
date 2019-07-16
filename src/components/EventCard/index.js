@@ -3,12 +3,12 @@ import Icon from '../Icon'
 
 import './style.css'
 
-const event = {
-  date: 3434234,
-  title: '',
-  space: '',
-  url: ''
-}
+// const event = {
+//   date: 3434234,
+//   title: '',
+//   space: '',
+//   url: ''
+// }
 
 function EventCard() {
   return (

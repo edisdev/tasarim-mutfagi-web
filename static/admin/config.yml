@@ -14,7 +14,12 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
     identifier_field: title
     fields:
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - {
+          label: 'Thumbnail',
+          name: 'thumbnail',
+          widget: 'image',
+          'media_library': { 'config': { 'multiple': false } },
+        }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - label: 'CTA Button'
@@ -35,6 +40,12 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Space', name: 'space', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
+      - {
+          label: 'Photos',
+          name: 'photos',
+          widget: 'image',
+          'media_library': { 'config': { 'multiple': true } },
+        }
   # Why #######################
   - name: 'why'
     label: 'Why'
@@ -55,7 +66,12 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
-      - { label: 'Logo', name: 'logo', widget: 'image' }
+      - {
+          label: 'Logo',
+          name: 'logo',
+          widget: 'image',
+          'media_library': { 'config': { 'multiple': false } },
+        }
   # Testimonials #######################
   #  - name: 'testimonial'
   #    label: 'Testimonials'
