@@ -18,7 +18,7 @@ collections:
           label: 'Thumbnail',
           name: 'thumbnail',
           widget: 'image',
-          'media_library': { 'config': { 'multiple': false } },
+          allow_multiple: false,
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
@@ -40,12 +40,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Space', name: 'space', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
-      - {
-          label: 'Photos',
-          name: 'photos',
-          widget: 'image',
-          'media_library': { 'config': { 'multiple': true } },
-        }
+      - { label: 'Photos', name: 'photos', widget: 'image', allow_multiple: true }
   # Why #######################
   - name: 'why'
     label: 'Why'
@@ -66,12 +61,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
-      - {
-          label: 'Logo',
-          name: 'logo',
-          widget: 'image',
-          'media_library': { 'config': { 'multiple': false } },
-        }
+      - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
   # Testimonials #######################
   #  - name: 'testimonial'
   #    label: 'Testimonials'
