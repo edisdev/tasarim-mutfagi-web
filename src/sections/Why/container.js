@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-import WhyCard from '../WhyCard'
+import WhyCard from '../../components/WhyCard'
 
 function Why({ data }) {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
-import SectionWhy from './container'
+import Container from './container'
 
 function Query() {
   return (
@@ -9,7 +9,7 @@ function Query() {
       query={query}
       render={data => {
         const edges = data.allMarkdownRemark.edges.map(o => o.node)
-        return <SectionWhy data={edges} />
+        return <Container data={edges} />
       }}
     />
   )
@@ -17,7 +17,7 @@ function Query() {
 
 const query = graphql`
   {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//why//" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//data/why//" } }) {
       edges {
         node {
           id

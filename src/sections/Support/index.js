@@ -17,7 +17,7 @@ function Query() {
 
 const query = graphql`
   {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//support//" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//data/supports//" } }) {
       edges {
         node {
           id

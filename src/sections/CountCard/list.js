@@ -1,5 +1,5 @@
 import React from 'react'
-import CountCard from '../CountCard'
+import CountCard from '../../components/CountCard'
 import './style.css'
 
 

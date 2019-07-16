@@ -3,6 +3,13 @@ import Icon from '../Icon'
 
 import './style.css'
 
+const event = {
+  date: 3434234,
+  title: '',
+  space: '',
+  url: ''
+}
+
 function EventCard() {
   return (
     <div className="EventCard">
@@ -25,7 +32,9 @@ function EventCard() {
         href="/"
         target="_blank"
         rel="noopener noreferrer"
-      >Open new link</a>
+      >
+        Open new link
+      </a>
     </div>
   )
 }

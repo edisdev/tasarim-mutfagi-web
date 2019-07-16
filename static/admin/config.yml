@@ -6,53 +6,65 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  # Slider #######################
+  - name: 'slider'
+    label: 'Slider'
+    folder: 'data/slider'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
+    identifier_field: title
+    fields:
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - label: 'CTA Button'
+        name: 'button'
+        widget: 'object'
+        fields:
+          - { label: 'Text', name: 'text', widget: 'string' }
+          - { label: 'Url', name: 'url', widget: 'string' }
+  # Event #######################
+  - name: 'event'
+    label: 'Events'
+    folder: 'data/events'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
+    identifier_field: title
+    fields:
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Space', name: 'space', widget: 'string' }
+      - { label: 'Url', name: 'url', widget: 'string' }
+  # Why #######################
+  - name: 'why'
+    label: 'Why'
+    folder: 'data/why'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
+    identifier_field: title
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
   # Supports #######################
   - name: 'support'
     label: 'Supports'
-    folder: 'data/support'
+    folder: 'data/supports'
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
     identifier_field: url
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
       - { label: 'Logo', name: 'logo', widget: 'image' }
   # Testimonials #######################
-  - name: 'testimonial'
-    label: 'Testimonials'
-    folder: 'data/testimonial'
-    create: true
-    slug: '{{slug}}'
-    identifier_field: fullName
-    fields:
-      - { label: 'Photo', name: 'photo', widget: 'image' }
-      - { label: 'Full Name', name: 'fullName', widget: 'string' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Comment', name: 'comment', widget: 'text' }
-  # Why #######################
-  - name: 'why'
-    label: 'Why'
-    folder: 'data/why'
-    create: true
-    slug: '{{slug}}'
-    identifier_field: title
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'text' }
-  # Slider #######################
-  - name: 'slider'
-    label: 'Slider'
-    folder: 'data/slider'
-    create: true
-    slug: '{{slug}}'
-    identifier_field: title
-    fields:
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - label: "CTA Button"
-        name: "button"
-        widget: "object"
-        fields:
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "Url", name: "url", widget: "string" }
+  #  - name: 'testimonial'
+  #    label: 'Testimonials'
+  #    folder: 'data/testimonial'
+  #    create: true
+  #    slug: '{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
+  #    identifier_field: fullName
+  #    fields:
+  #      - { label: 'Photo', name: 'photo', widget: 'image' }
+  #      - { label: 'Full Name', name: 'fullName', widget: 'string' }
+  #      - { label: 'Title', name: 'title', widget: 'string' }
+  #      - { label: 'Comment', name: 'comment', widget: 'text' }

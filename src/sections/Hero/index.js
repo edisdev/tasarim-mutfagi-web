@@ -26,10 +26,30 @@ function Hero() {
             </div>
           </div>
         </div>
-        <img className="home-bubble-1" src={HomeBubble1} alt="" width="143" />
-        <img className="home-bubble-2" src={HomeBubble2} alt="" width="406" />
-        <img className="home-bubble-3" src={HomeBubble3} alt="" width="377" />
-        <img className="home-bubble-4" src={HomeBubble4} alt="" width="385" />
+        <img
+          className="home-bubble-1"
+          src={HomeBubble1}
+          alt="home bubble 1"
+          width="143"
+        />
+        <img
+          className="home-bubble-2"
+          src={HomeBubble2}
+          alt="home bubble 2"
+          width="406"
+        />
+        <img
+          className="home-bubble-3"
+          src={HomeBubble3}
+          alt="home bubble 3"
+          width="377"
+        />
+        <img
+          className="home-bubble-4"
+          src={HomeBubble4}
+          alt="home bubble 4"
+          width="385"
+        />
       </div>
     </div>
   )

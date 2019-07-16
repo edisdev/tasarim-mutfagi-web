@@ -1,8 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import SocialButton from './'
-import Icon from '../Icon'
+import SocialButton from './index'
+import Icon from '../../components/Icon'
 
 import accounts from '../../../data/accounts'
 const account = accounts.find(o => o.type === 'social-card')
