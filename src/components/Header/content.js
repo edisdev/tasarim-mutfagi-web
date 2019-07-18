@@ -8,20 +8,19 @@ import MobileMenuToggle from '../MobileMenuToggle'
 
 function Header({ data }) {
   const [isShow, setShow] = useState(false)
-  let scrollY = 0
+  const [bodyOffset, setBodyOffset] = useState(
+    typeof window !== 'undefined' ? document.body.getBoundingClientRect() : {}
+  )
+  let [scrollY, setScrollY] = useState(bodyOffset.top)
+
+  const listener = () => {
+    setBodyOffset(
+      typeof window !== 'undefined' ? document.body.getBoundingClientRect() : {}
+    )
+    setScrollY(-bodyOffset.top)
+  }
 
   if (typeof window !== 'undefined') {
-    const [bodyOffset, setBodyOffset] = useState(
-      document.body.getBoundingClientRect()
-    )
-    const [scrollY, setScrollY] = useState(bodyOffset.top)
-    console.log(scrollY)
-
-    const listener = () => {
-      setBodyOffset(document.body.getBoundingClientRect())
-      setScrollY(-bodyOffset.top)
-    }
-
     useEffect(() => {
       window.addEventListener('scroll', listener)
       return () => {
