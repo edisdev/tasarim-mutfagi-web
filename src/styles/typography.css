@@ -8,6 +8,13 @@ html {
   font-weight: var(--fw-normal);
 }*/
 
+.lh-normal {
+  line-height: var(--line-height);
+}
+.lh-head {
+  line-height: var(--line-height-head);
+}
+
 .h1,
 .h2,
 .h3 {
@@ -55,4 +62,10 @@ small,
 
 .fw-medium {
   font-weight: var(--fw-bold);
+}
+
+.f-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

@@ -1,4 +1,6 @@
 import React from 'react'
+import format from 'date-fns/format'
+import tr from 'date-fns/locale/tr'
 import Icon from '../Icon'
 
 import './style.css'
@@ -10,18 +12,22 @@ import './style.css'
 //   url: ''
 // }
 
-function EventCard() {
+function EventCard({ title, date, url, space }) {
   return (
     <div className="EventCard">
       <div className="EventCard-body">
         <div className="EventCard-date">
-          <span className="EventCard-date-day">20</span>
-          <span className="EventCard-date-month">MAR</span>
+          <span className="EventCard-date-day">{format(date, 'D')}</span>
+          <span className="EventCard-date-month">
+            {format(date, 'MMM', { locale: tr })}
+          </span>
         </div>
         <div className="EventCard-info">
-          <h4>Mockup Zone</h4>
-          <p className="fs-small c-gray">Kollektif House</p>
-          <p className="fs-small c-gray">Salı, 20 Mart 2018, 18:00</p>
+          <h4 className="lh-head">{title}</h4>
+          <p className="fs-small c-gray">{space}</p>
+          <p className="fs-small c-gray">
+            {format(date, 'dddd, D MMM YYYY, HH:mm', { locale: tr })}
+          </p>
         </div>
         <div className="EventCard-arrow">
           <Icon name="right" />

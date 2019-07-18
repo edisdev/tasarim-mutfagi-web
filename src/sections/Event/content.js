@@ -1,7 +1,7 @@
 import React from 'react'
 import EventCard from '../../components/EventCard'
 
-function EventContent() {
+function EventContent({ event }) {
   return (
     <div className="col-12 col-md-6 col-lg-5 col-xl-4 SectionEvent-content">
       {/* header */}
@@ -12,7 +12,7 @@ function EventContent() {
       </p>
       {/* event card */}
       <div className="mt-5">
-        <EventCard />
+        <EventCard {...event.frontmatter} />
       </div>
       {/* buttons */}
       <div className="mt-5">
