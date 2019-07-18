@@ -33,11 +33,11 @@
       }
     }
     &-2 {
-      right: -305px;
+      right: -260px;
       top: -85px;
       @media (--lg) {
         right: -230px;
-        top: -165px;
+        top: -150px;
       }
     }
     &-3 {

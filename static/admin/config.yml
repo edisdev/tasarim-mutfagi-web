@@ -2,9 +2,6 @@ backend:
   name: git-gateway
   branch: netlify-cms
 
-media_library:
-  config:
-    multiple: true
 media_folder: static/img
 public_folder: /img
 
@@ -17,12 +14,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
     identifier_field: title
     fields:
-      - {
-          label: 'Thumbnail',
-          name: 'thumbnail',
-          widget: 'image',
-          allow_multiple: false,
-        }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - label: 'CTA Button'
@@ -43,12 +35,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Space', name: 'space', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
-      - {
-          label: 'Photos',
-          name: 'photos',
-          widget: 'image',
-          allow_multiple: true,
-        }
+      - { label: 'Photos', name: 'photos', widget: 'image' }
   # Why #######################
   - name: 'why'
     label: 'Why'
@@ -69,7 +56,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
-      - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
+      - { label: 'Logo', name: 'logo', widget: 'image' }
   # Testimonials #######################
   #  - name: 'testimonial'
   #    label: 'Testimonials'

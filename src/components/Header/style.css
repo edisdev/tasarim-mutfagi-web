@@ -1,16 +1,17 @@
 .Header {
   z-index: 100;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
+  transition: var(--transition);
 
   &-body {
     z-index: 100;
     position: relative;
 
     .container {
-      height: 120px;
+      height: 160px;
       align-items: center;
       display: flex;
       justify-content: space-between;
@@ -52,6 +53,16 @@
     display: none;
     @media (--lg) {
       display: block !important;
+    }
+  }
+
+  &.on-scroll {
+    position: fixed;
+    background-color: var(--color-dark);
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.5);
+
+    .container {
+      height: 90px;
     }
   }
 }
