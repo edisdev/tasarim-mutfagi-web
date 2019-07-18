@@ -7,6 +7,7 @@ import SectionSlider from '../sections/Slider'
 import SectionEvent from '../sections/Event'
 import SectionWhy from '../sections/Why'
 import SectionSupport from '../sections/Support'
+import SectionSocialCount from '../sections/SocialCount'
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <SectionEvent />
     <SectionWhy />
     <SectionSupport />
+    <SectionSocialCount />
   </Layout>
 )
 

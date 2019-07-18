@@ -3,18 +3,18 @@ import c from 'classnames'
 
 import './style.css'
 
-function CountCard({ name, label, count, url }) {
+function CardCount({ name, label, count, url }) {
   return (
     <a
-      className={c('CountCard', `--${name}`)}
+      className={c('CardCount', `--${name}`)}
       href={url}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <p className="h4 mb-1">{count}</p>
+      <p className="h3 mb-1">{count}</p>
       <p>{label}</p>
     </a>
   )
 }
 
-export default CountCard
+export default CardCount

@@ -5,7 +5,7 @@ import '../src/atoms/Input/stories'
 import '../src/atoms/Buttons/stories'
 
 import '../src/sections/SocialButton/stories'
-import '../src/components/CountCard/stories'
+import '../src/components/CardCount/stories'
 import '../src/components/MobileMenuToggle/stories'
 import '../src/components/Navigation/stories'
 
