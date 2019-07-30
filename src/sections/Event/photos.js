@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'gatsby-image'
+import React from 'react';
+import Image from 'gatsby-image';
 
 function EventPhotos({ photos }) {
   return (
@@ -46,7 +46,7 @@ function EventPhotos({ photos }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default EventPhotos
+export default EventPhotos;

@@ -1,18 +1,18 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
+import React from 'react';
+import { graphql, StaticQuery } from 'gatsby';
 
-import Container from './container'
+import Container from './container';
 
 function Query() {
   return (
     <StaticQuery
       query={query}
-      render={data => {
-        const event = data.allMarkdownRemark.edges[0].node
-        return <Container event={event} photos={data.allFile.edges} />
+      render={(data) => {
+        const event = data.allMarkdownRemark.edges[0].node;
+        return <Container event={event} photos={data.allFile.edges} />;
       }}
     />
-  )
+  );
 }
 
 const query = graphql`
@@ -51,6 +51,6 @@ const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Query
+export default Query;

@@ -1,7 +1,7 @@
-import React from 'react'
-import c from 'classnames'
+import React from 'react';
+import c from 'classnames';
 
-import './style.css'
+import './style.css';
 
 function SocialButton({ name, url, children }) {
   return (
@@ -13,7 +13,7 @@ function SocialButton({ name, url, children }) {
     >
       {children}
     </a>
-  )
+  );
 }
 
-export default SocialButton
+export default SocialButton;

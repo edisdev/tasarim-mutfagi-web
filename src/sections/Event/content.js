@@ -1,5 +1,5 @@
-import React from 'react'
-import EventCard from '../../components/EventCard'
+import React from 'react';
+import EventCard from '../EventCard';
 
 function EventContent({ event }) {
   return (
@@ -19,7 +19,7 @@ function EventContent({ event }) {
       {/*  <button className="Btn Btn-primary mr-3">Tüm Etkinlikler</button>*/}
       {/*</div>*/}
     </div>
-  )
+  );
 }
 
-export default EventContent
+export default EventContent;

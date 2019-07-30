@@ -1,5 +1,5 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 function Colors() {
   return (
@@ -11,11 +11,11 @@ function Colors() {
       <div className="Color --white">white</div>
       <div className="Color --alert">alert</div>
     </div>
-  )
+  );
 }
 
 storiesOf('Atoms', module).add('Colors', () => (
   <div className="Space">
     <Colors />
   </div>
-))
+));

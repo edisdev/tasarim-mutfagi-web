@@ -1,8 +1,8 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
 
-import EventContent from './content'
-import EventPhotos from './photos'
+import EventContent from './content';
+import EventPhotos from './photos';
 
 function Event({ event, photos }) {
   return (
@@ -14,7 +14,7 @@ function Event({ event, photos }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Event
+export default Event;

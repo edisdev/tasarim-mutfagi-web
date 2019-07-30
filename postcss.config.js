@@ -8,8 +8,8 @@ module.exports = {
     'postcss-extend': {},
     'postcss-custom-media': {
       importFrom: [
-        'src/styles/viewport.css'
-      ]
-    }
-  }
-}
+        'src/styles/viewport.css',
+      ],
+    },
+  },
+};

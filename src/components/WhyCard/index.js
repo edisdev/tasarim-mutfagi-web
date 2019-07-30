@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import './style.css'
+import './style.css';
 
 function WhyCard({ title, description }) {
   return (
@@ -8,7 +8,7 @@ function WhyCard({ title, description }) {
       <h4 className="WhyCard-title">{title}</h4>
       <p className="WhyCard-desc fs-small">{description}</p>
     </div>
-  )
+  );
 }
 
-export default WhyCard
+export default WhyCard;

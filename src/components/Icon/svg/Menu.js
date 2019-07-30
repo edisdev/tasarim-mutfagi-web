@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Menu() {
   return (
@@ -14,7 +14,7 @@ function Menu() {
         <rect width="20" height="2.5" y="14" rx="1.25" />
       </g>
     </svg>
-  )
+  );
 }
 
-export default Menu
+export default Menu;

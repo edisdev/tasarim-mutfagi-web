@@ -1,5 +1,5 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 function Typography() {
   return (
@@ -39,11 +39,11 @@ function Typography() {
         </p>
       </li>
     </ul>
-  )
+  );
 }
 
 storiesOf('Atoms', module).add('Typography', () => (
   <div className="Space">
     <Typography />
   </div>
-))
+));

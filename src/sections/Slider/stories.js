@@ -1,6 +1,6 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-import Slider from './index'
+import Slider from './index';
 
-storiesOf('Organism', module).add('Slider', () => <Slider />)
+storiesOf('Organism', module).add('Slider', () => <Slider />);

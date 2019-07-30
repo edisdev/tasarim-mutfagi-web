@@ -1,6 +1,6 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Icon from '../../components/Icon'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import Icon from '../../components/Icon';
 
 function Icons() {
   return (
@@ -14,11 +14,11 @@ function Icons() {
       <Icon name="instagram" />
       <Icon name="medium" />
     </div>
-  )
+  );
 }
 
 storiesOf('Atoms', module).add('Icons', () => (
   <div className="Space">
     <Icons />
   </div>
-))
+));

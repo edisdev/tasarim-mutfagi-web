@@ -1,24 +1,25 @@
-import React, { Component } from 'react'
-import { storiesOf } from '@storybook/react'
+import React, { Component } from 'react';
+import { storiesOf } from '@storybook/react';
 
-import ToggleButton from './'
+import ToggleButton from '.';
 
 class Toggle extends Component {
   state = {
-    isActive: false
+    isActive: false,
   }
 
   onToggle = () => {
     this.setState(prevState => ({
-      isActive: !prevState.isActive
-    }))
+      isActive: !prevState.isActive,
+    }));
   }
 
   render() {
+    const { isActive } = this.state;
     return (
-      <ToggleButton onToggle={this.onToggle} isActive={this.state.isActive} />
-    )
+      <ToggleButton onToggle={this.onToggle} isActive={isActive} />
+    );
   }
 }
 
-storiesOf('Molecules', module).add('Mobile Toggle Button', () => <Toggle />)
+storiesOf('Molecules', module).add('Mobile Toggle Button', () => <Toggle />);

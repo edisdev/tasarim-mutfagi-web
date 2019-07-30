@@ -1,5 +1,5 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 function Buttons() {
   return (
@@ -8,11 +8,11 @@ function Buttons() {
       <button className="Btn Btn-ghost-primary">Detaylari Görüntüle</button>
       <button className="Btn Btn-primary">Topluluğa Katıl</button>
     </div>
-  )
+  );
 }
 
 storiesOf('Atoms', module).add('Buttons', () => (
   <div className="Space">
     <Buttons />
   </div>
-))
+));

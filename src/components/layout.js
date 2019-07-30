@@ -1,8 +1,8 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Header from 'components/Header'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Header from 'components/Header';
 
-import 'styles/app.css'
+import 'styles/app.css';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -14,7 +14,7 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 const query = graphql`
   query SiteTitleQuery {
@@ -24,6 +24,6 @@ const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Layout
+export default Layout;

@@ -1,41 +1,41 @@
-import React from 'react'
+import React from 'react';
 
-import Left from './svg/Left'
-import Right from './svg/Right'
-import Menu from './svg/Menu'
-import Close from './svg/Close'
-import Facebook from './svg/Facebook'
-import Youtube from './svg/Youtube'
-import Twitter from './svg/Twitter'
-import Medium from './svg/Medium'
-import Instagram from './svg/Instagram'
-import Meetup from './svg/Meetup'
+import Left from './svg/Left';
+import Right from './svg/Right';
+import Menu from './svg/Menu';
+import Close from './svg/Close';
+import Facebook from './svg/Facebook';
+import Youtube from './svg/Youtube';
+import Twitter from './svg/Twitter';
+import Medium from './svg/Medium';
+import Instagram from './svg/Instagram';
+import Meetup from './svg/Meetup';
 
 function Icon({ name }) {
   switch (name) {
     case 'left':
-      return <Left />
+      return <Left />;
     case 'right':
-      return <Right />
+      return <Right />;
     case 'facebook':
-      return <Facebook />
+      return <Facebook />;
     case 'youtube':
-      return <Youtube />
+      return <Youtube />;
     case 'twitter':
-      return <Twitter />
+      return <Twitter />;
     case 'medium':
-      return <Medium />
+      return <Medium />;
     case 'instagram':
-      return <Instagram />
+      return <Instagram />;
     case 'meetup':
-      return <Meetup />
+      return <Meetup />;
     case 'menu':
-      return <Menu />
+      return <Menu />;
     case 'close':
-      return <Close />
+      return <Close />;
     default:
-      return <></>
+      return <></>;
   }
 }
 
-export default Icon
+export default Icon;

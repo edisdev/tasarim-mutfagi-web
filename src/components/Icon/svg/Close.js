@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Close() {
   return (
@@ -27,7 +27,7 @@ function Close() {
         />
       </g>
     </svg>
-  )
+  );
 }
 
-export default Close
+export default Close;

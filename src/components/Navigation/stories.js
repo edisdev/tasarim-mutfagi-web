@@ -1,8 +1,8 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-import Navigation from './'
-import navigation from '../../../data/navigation'
+import Navigation from '.';
+import navigation from '../../data/navigation';
 
 storiesOf('Molecules', module)
   .add('Navigation Desktop', () => (
@@ -12,6 +12,6 @@ storiesOf('Molecules', module)
   ))
   .add('Navigation Mobile', () => (
     <div className="Space">
-      <Navigation data={navigation} isMobile={true} />
+      <Navigation data={navigation} isMobile />
     </div>
-  ))
+  ));

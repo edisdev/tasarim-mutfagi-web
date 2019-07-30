@@ -1,7 +1,7 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
 
-import WhyCard from '../../components/WhyCard'
+import WhyCard from '../../components/WhyCard';
 
 function Why({ data }) {
   return (
@@ -23,7 +23,7 @@ function Why({ data }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Why
+export default Why;

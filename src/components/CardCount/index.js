@@ -1,9 +1,11 @@
-import React from 'react'
-import c from 'classnames'
+import React from 'react';
+import c from 'classnames';
 
-import './style.css'
+import './style.css';
 
-function CardCount({ name, label, count, url }) {
+function CountCard({
+  name, label, count, url,
+}) {
   return (
     <a
       className={c('CardCount', `--${name}`)}
@@ -14,7 +16,7 @@ function CardCount({ name, label, count, url }) {
       <p className="h3 mb-1">{count}</p>
       <p>{label}</p>
     </a>
-  )
+  );
 }
 
-export default CardCount
+export default CountCard;

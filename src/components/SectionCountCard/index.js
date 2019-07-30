@@ -1,15 +1,15 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Content from './content';
+import CardList from './list';
 
-function HeaderWrapper() {
+function Index() {
   return (
     <StaticQuery
       query={query}
       render={(data) => {
-        const edges = data.allNavigationJson.edges.map(o => o.node);
-        return <Content data={edges} />;
+        const edges = data.allAccountsJson.edges.map(o => o.node);
+        return <CardList data={edges} />;
       }}
     />
   );
@@ -17,16 +17,18 @@ function HeaderWrapper() {
 
 const query = graphql`
   {
-    allNavigationJson {
+    allAccountsJson {
       edges {
         node {
           id
+          name
           label
           url
+          count
         }
       }
     }
   }
 `;
 
-export default HeaderWrapper;
+export default Index;

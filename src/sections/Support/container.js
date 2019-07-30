@@ -1,7 +1,8 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
 
-function Support({ supporters }) {
+function Event({ supporters }) {
+  console.log(supporters);
   return (
     <div id="destekcilerimiz" className="Section SectionSupport">
       <div className="container">
@@ -9,28 +10,28 @@ function Support({ supporters }) {
 
         <div className="SectionSupport-list mt-4">
           <div className="row">
-            {supporters.map(support => {
-              return (
-                <div key={support.id} className="col-6 col-lg-2">
-                  {/* TODO: hover? */}
-                  <a
-                    rel="noopener noreferrer"
-                    className="SectionSupport-logo"
-                    href={support.frontmatter.url}
-                  >
-                    <img
-                      alt={support.frontmatter.title}
-                      src={support.frontmatter.logo}
-                    />
-                  </a>
-                </div>
-              )
-            })}
+            {supporters.map(support => (
+              <div key={support.id} className="col-6 col-lg-2">
+                {/* TODO: hover? */}
+                <a
+                  rel="noopener noreferrer"
+                  className="SectionSupport-logo"
+                  href={support.url}
+                >
+                  <img
+                    alt={support.label}
+                    src={require(`../../images/supporters/${
+                      support.logoName
+                    }.svg`)}
+                  />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Support
+export default Event;

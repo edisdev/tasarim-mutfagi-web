@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import format from 'date-fns/format'
-import tr from 'date-fns/locale/tr'
-import Icon from '../Icon'
+import tr from 'date-fns/locale/tr';
+import Icon from '../Icon';
 
-import './style.css'
+import './style.css';
 
 // const event = {
 //   date: 3434234,
@@ -39,10 +39,10 @@ function EventCard({ title, date, url, space }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Open new link
+Open new link
       </a>
     </div>
-  )
+  );
 }
 
-export default EventCard
+export default EventCard;

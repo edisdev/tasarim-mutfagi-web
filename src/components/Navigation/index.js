@@ -1,21 +1,21 @@
-import React from 'react'
-import c from 'classnames'
-import animateScrollTo from 'animated-scroll-to'
+import React from 'react';
+import c from 'classnames';
+import animateScrollTo from 'animated-scroll-to';
 
-import './style.css'
+import './style.css';
 
-import NavBubble1 from '../../../static/assets/nav/bubble-1.png'
-import NavBubble2 from '../../../static/assets/nav/bubble-2.png'
+import NavBubble1 from '../../../static/assets/nav/bubble-1.png';
+import NavBubble2 from '../../../static/assets/nav/bubble-2.png';
 
 function Navigation({ data, isMobile, onToggle }) {
-  const go = id => {
-    animateScrollTo(document.querySelector('#' + id), {
+  const go = (id) => {
+    animateScrollTo(document.querySelector(`#${id}`), {
       speed: 200,
-      offset: -60
-    })
-    if (!onToggle) return
-    onToggle()
-  }
+      offset: -60,
+    });
+    if (!onToggle) return;
+    onToggle();
+  };
 
   return (
     <div className={c(isMobile ? 'NavigationMobile' : 'NavigationDesktop')}>
@@ -38,7 +38,7 @@ function Navigation({ data, isMobile, onToggle }) {
         </>
       )}
     </div>
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;

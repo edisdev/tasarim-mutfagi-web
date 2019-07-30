@@ -1,9 +1,9 @@
-import React from 'react'
-import c from 'classnames'
-import PropTypes from 'prop-types'
+import React from 'react';
+import c from 'classnames';
+import PropTypes from 'prop-types';
 
-import './style.css'
-import Icon from '../Icon'
+import './style.css';
+import Icon from '../Icon';
 
 function MobileMenuToggle({ isActive, onToggle }) {
   return (
@@ -21,17 +21,17 @@ function MobileMenuToggle({ isActive, onToggle }) {
         <Icon name="close" />
       </span>
     </button>
-  )
+  );
 }
 
 MobileMenuToggle.propTypes = {
   onToggle: PropTypes.func,
-  isActive: PropTypes.bool
-}
+  isActive: PropTypes.bool,
+};
 
 MobileMenuToggle.defaultProps = {
   onToggle: () => {},
-  isActive: false
-}
+  isActive: false,
+};
 
-export default MobileMenuToggle
+export default MobileMenuToggle;

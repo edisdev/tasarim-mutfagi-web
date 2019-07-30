@@ -1,21 +1,21 @@
-import React from 'react'
-import './style.css'
-import Slider from './slider'
+import React from 'react';
+import './style.css';
+import Slider from './slider';
 
 class Section extends React.Component {
   state = {
-    Flickity: null
+    Flickity: null,
   }
 
   constructor(props) {
-    super(props)
+    super(props);
     if (typeof window !== 'undefined') {
-      this.state.Flickity = require('react-flickity-component')
+      this.state.Flickity = require('react-flickity-component');
     }
   }
 
   render() {
-    const { Flickity } = this.state
+    const { Flickity } = this.state;
 
     return (
       <div className="Section SectionSlider">
@@ -29,8 +29,8 @@ class Section extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Section
+export default Section;
