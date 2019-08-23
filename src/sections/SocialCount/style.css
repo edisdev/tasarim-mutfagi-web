@@ -1,4 +1,8 @@
 .SectionCount {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  .col-card {
+    margin-bottom: 30px;
+    @media (--lg) {
+      margin-bottom: 0;
+    }
+  }
 }

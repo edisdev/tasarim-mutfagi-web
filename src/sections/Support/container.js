@@ -1,9 +1,9 @@
 import React from 'react'
 import './style.css'
 
-function Event({ supporters }) {
+function Support({ supporters }) {
   return (
-    <div className="Section SectionSupport">
+    <div id="destekcilerimiz" className="Section SectionSupport">
       <div className="container">
         <h2>Destekçilerimiz</h2>
 
@@ -33,4 +33,4 @@ function Event({ supporters }) {
   )
 }
 
-export default Event
+export default Support

@@ -4,9 +4,9 @@ import './style.css'
 import EventContent from './content'
 // import EventPhotos from './photos'
 
-function Event({ event }) {
+function Event({ event, photos }) {
   return (
-    <div className="Section SectionEvent">
+    <div id="etkinlikler" className="Section SectionEvent">
       <div className="container">
         <div className="row">
           <EventContent event={event} />

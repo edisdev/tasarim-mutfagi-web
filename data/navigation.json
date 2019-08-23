@@ -1,18 +1,18 @@
 [
   {
     "label": "Etkinlikler",
-    "url": ""
+    "url": "etkinlikler"
   },
   {
     "label": "Neden Katılmalıyım?",
-    "url": ""
+    "url": "neden-katilmaliyim"
   },
   {
     "label": "Destekçilerimiz",
-    "url": ""
+    "url": "destekcilerimiz"
   },
   {
-    "label": "Yorumlar",
-    "url": ""
+    "label": "Kaç Kişiyiz",
+    "url": "kac-kisiyiz"
   }
 ]

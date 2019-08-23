@@ -5,7 +5,7 @@ import WhyCard from '../../components/WhyCard'
 
 function Why({ data }) {
   return (
-    <div className="Section SectionWhy">
+    <div id="neden-katilmaliyim" className="Section SectionWhy">
       <div className="container">
         <div className="row">
           <div className="col-12">

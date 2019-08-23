@@ -1,19 +1,34 @@
 import React from 'react'
 import c from 'classnames'
-import { Link } from 'gatsby'
+import animateScrollTo from 'animated-scroll-to'
+
 import './style.css'
 
 import NavBubble1 from '../../images/nav/bubble-1.png'
 import NavBubble2 from '../../images/nav/bubble-2.png'
 
-function Navigation({ data, isMobile }) {
+function Navigation({ data, isMobile, onToggle }) {
+  const go = id => {
+    animateScrollTo(document.querySelector('#' + id), {
+      speed: 200,
+      offset: -60
+    })
+    if (!onToggle) return
+    onToggle()
+  }
+
   return (
     <div className={c(isMobile ? 'NavigationMobile' : 'NavigationDesktop')}>
       <nav className="Navigation-menu">
         {data.map(link => (
-          <Link className="Navigation-link" key={link.label} to={link.url}>
+          <button
+            type="button"
+            className="Navigation-link"
+            key={link.label}
+            onClick={() => go(link.url)}
+          >
             {link.label}
-          </Link>
+          </button>
         ))}
       </nav>
       {isMobile && (

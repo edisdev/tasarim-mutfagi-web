@@ -1,8 +1,4 @@
 .SectionWhy {
-  @media (--sm) {
-    padding-top: 0;
-  }
-
   &-list {
     .row {
       flex-wrap: nowrap;

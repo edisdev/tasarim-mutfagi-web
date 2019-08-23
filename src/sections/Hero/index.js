@@ -21,8 +21,20 @@ function Hero() {
             </p>
             {/* buttons */}
             <div className="mt-5">
-              <button className="Btn Btn-primary mr-3">Topluluğa Katıl</button>
-              <button className="Btn Btn-ghost-white">Bize Yazın</button>
+              <a
+                href=""
+                className="Btn Btn-primary mr-3"
+                rel="noopener noreferrer"
+              >
+                Topluluğa Katıl
+              </a>
+              <a
+                href=""
+                className="Btn Btn-ghost-white"
+                rel="noopener noreferrer"
+              >
+                Bize Yazın
+              </a>
             </div>
           </div>
         </div>

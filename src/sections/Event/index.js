@@ -9,7 +9,7 @@ function Query() {
       query={query}
       render={data => {
         const event = data.allMarkdownRemark.edges[0].node
-        return <Container event={event} />
+        return <Container event={event} photos={{}} />
       }}
     />
   )

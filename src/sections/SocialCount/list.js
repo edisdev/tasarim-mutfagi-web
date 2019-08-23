@@ -5,7 +5,7 @@ import CardCount from '../../components/CardCount'
 
 function CountCol({ name, label, url, count }) {
   return (
-    <div className="col col-6 col-sm-4 col-md-2">
+    <div className="col-card col-6 col-sm-4 col-lg-2">
       <CardCount name={name} label={label} url={url} count={count} />
     </div>
   )
@@ -13,7 +13,7 @@ function CountCol({ name, label, url, count }) {
 
 function List({ data }) {
   return (
-    <section className="Section SectionCount">
+    <section id="kac-kisiyiz" className="Section SectionCount">
       <div className="container">
         <h2>Kaç Kişiyiz?</h2>
         <div className="mt-5">

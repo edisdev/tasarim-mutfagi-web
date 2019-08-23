@@ -35,7 +35,12 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Space', name: 'space', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
-      - { label: 'Photos', name: 'photos', widget: 'image' }
+      - {
+          label: 'Photos',
+          name: 'photos',
+          widget: 'image',
+          media_library: { config: { multiple: true } },
+        }
   # Why #######################
   - name: 'why'
     label: 'Why'

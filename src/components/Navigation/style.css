@@ -1,3 +1,11 @@
+.Navigation {
+  &-link {
+    outline: none;
+    position: relative;
+    color: white;
+  }
+}
+
 .NavigationMobile {
   .Navigation {
     &-menu {
@@ -10,7 +18,6 @@
     }
 
     &-link {
-      position: relative;
       margin-bottom: var(--space-2);
     }
   }
@@ -42,8 +49,6 @@
     }
 
     &-link {
-      position: relative;
-
       & + .Navigation-link {
         margin-left: var(--space-5);
       }
@@ -62,6 +67,7 @@
       }
 
       &.active:after,
+      &:focus:after,
       &:hover:after {
         opacity: 1;
         transform: translateY(0);
