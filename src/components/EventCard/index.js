@@ -24,8 +24,8 @@ function EventCard({ title, date, url, space }) {
         </div>
         <div className="EventCard-info">
           <h4 className="lh-head">{title}</h4>
-          <p className="fs-small c-gray mt-1">{space}</p>
-          <p className="fs-small c-gray">
+          <p className="fs-small c-white-gray mt-1">{space}</p>
+          <p className="fs-small c-white-gray">
             {format(date, 'dddd, D MMM YYYY, HH:mm', { locale: tr })}
           </p>
         </div>

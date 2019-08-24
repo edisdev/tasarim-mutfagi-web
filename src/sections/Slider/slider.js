@@ -13,7 +13,7 @@ function SliderItem({ thumbnail, title, description, button }) {
       <img className="SliderItem-logo" src={thumbnail} alt={title} />
       <div className="SliderItem-body">
         <h3>{title}</h3>
-        <p className="c-gray mt-2">{description}</p>
+        <p className="c-white-gray mt-2">{description}</p>
         <button className="Btn Btn-primary mt-3">{button.text}</button>
       </div>
     </div>

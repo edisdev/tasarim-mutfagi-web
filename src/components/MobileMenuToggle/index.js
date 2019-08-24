@@ -10,8 +10,9 @@ function MobileMenuToggle({ isActive, onToggle }) {
     <button
       tabIndex="-1"
       type="button"
-      onClick={onToggle}
       className={c('mobile-menu-toggle', 'BtnIcon', { '--active': isActive })}
+      aria-label="Mobile Menu Toggle"
+      onClick={onToggle}
     >
       <span className="menu">
         <Icon name="menu" />

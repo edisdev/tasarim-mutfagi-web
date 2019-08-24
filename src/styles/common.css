@@ -42,6 +42,10 @@ button {
   color: var(--color-gray);
 }
 
+.c-white-gray {
+  color: var(--color-gray);
+}
+
 .c-primary {
   color: var(--color-primary);
 }
