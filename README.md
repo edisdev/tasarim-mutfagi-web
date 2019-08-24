@@ -8,24 +8,13 @@
 
 Demo: https://tm19.netlify.com/
 
-Storybook: https://tm19.netlify.com/storybook/
-
 #### Start developing
 
 ```sh
-npm i
-gatsby develop
+yarn
+yarn develop
 ```
 
 Your site is now running at `http://localhost:8000`
     
 Note: You'll also see a second link: `http://localhost:8000/___graphql`
-
-
-#### Start storybook
-
-```sh
-npm run storybook
-```
-
-Your site is now running at `http://localhost:6006`
