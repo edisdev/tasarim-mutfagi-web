@@ -4,8 +4,8 @@ import animateScrollTo from 'animated-scroll-to'
 
 import './style.css'
 
-import NavBubble1 from '../../images/nav/bubble-1.png'
-import NavBubble2 from '../../images/nav/bubble-2.png'
+import NavBubble1 from '../../../static/assets/nav/bubble-1.png'
+import NavBubble2 from '../../../static/assets/nav/bubble-2.png'
 
 function Navigation({ data, isMobile, onToggle }) {
   const go = id => {

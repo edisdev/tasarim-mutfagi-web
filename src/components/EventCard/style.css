@@ -34,7 +34,7 @@
 
   &-date {
     text-align: center;
-    padding: var(--space-3);
+    padding: var(--space-4) var(--space-3);
 
     span {
       display: block;
@@ -56,7 +56,7 @@
 
   &-info {
     transition: var(--transition);
-    padding: var(--space-3);
+    padding: var(--space-4) var(--space-3);
     border-left: 1px dashed var(--color-dark);
   }
 
@@ -78,6 +78,7 @@
 
   /* HOVER */
 
+  &:focus-within &-info,
   &:hover &-info {
     border-left-width: 3px;
   }

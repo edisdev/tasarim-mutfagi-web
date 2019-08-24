@@ -9,7 +9,7 @@ function Query() {
       query={query}
       render={data => {
         const event = data.allMarkdownRemark.edges[0].node
-        return <Container event={event} photos={{}} />
+        return <Container event={event} photos={data.allFile.edges} />
       }}
     />
   )
@@ -30,6 +30,22 @@ const query = graphql`
             date
             url
             space
+          }
+        }
+      }
+    }
+    allFile(
+      filter: { absolutePath: { regex: "//event-photos//" } }
+      sort: { fields: name }
+    ) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }

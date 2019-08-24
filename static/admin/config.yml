@@ -23,6 +23,7 @@ collections:
         fields:
           - { label: 'Text', name: 'text', widget: 'string' }
           - { label: 'Url', name: 'url', widget: 'string' }
+
   # Event #######################
   - name: 'event'
     label: 'Events'
@@ -35,12 +36,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Space', name: 'space', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
-      - {
-          label: 'Photos',
-          name: 'photos',
-          widget: 'image',
-          media_library: { config: { multiple: true } },
-        }
+      # - { label: 'Photos', name: 'photos', widget: 'image' }
+
   # Why #######################
   - name: 'why'
     label: 'Why'
@@ -51,6 +48,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
+
   # Supports #######################
   - name: 'support'
     label: 'Supports'

@@ -9,11 +9,14 @@
   border: 10px solid var(--color-hide);
   border-radius: var(--radius);
 
+  &:focus,
   &:hover {
+    outline: none;
     background-color: var(--color-hide);
   }
 
   &.--twitter {
+    &:focus,
     &:hover {
       border-color: var(--color-twitter);
       background-color: var(--color-twitter);
@@ -21,6 +24,7 @@
   }
 
   &.--youtube {
+    &:focus,
     &:hover {
       border-color: var(--color-youtube);
       background-color: var(--color-youtube);
@@ -28,6 +32,7 @@
   }
 
   &.--meetup {
+    &:focus,
     &:hover {
       border-color: var(--color-meetup);
       background-color: var(--color-meetup);
@@ -35,6 +40,7 @@
   }
 
   &.--slack {
+    &:focus,
     &:hover {
       border-color: var(--color-slack);
       background-color: var(--color-slack);
@@ -42,6 +48,7 @@
   }
 
   &.--instagram {
+    &:focus,
     &:hover {
       border-color: var(--color-instagram);
       background-color: var(--color-instagram);
@@ -49,6 +56,7 @@
   }
 
   &.--newsletter {
+    &:focus,
     &:hover {
       border-color: var(--color-newsletter);
       background-color: var(--color-newsletter);

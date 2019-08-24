@@ -1,12 +1,17 @@
 .SectionEvent {
+  @media (--md) {
+    padding-bottom: 0;
+  }
+
   > .container {
     position: relative;
   }
 
   &-content {
     @media (--md) {
-      //position: absolute;
-      //top: 0;
+      min-width: 400px;
+      position: absolute;
+      top: 0;
     }
   }
 

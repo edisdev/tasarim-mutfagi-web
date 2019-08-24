@@ -28,6 +28,7 @@
     color: var(--color-white);
     background-color: var(--color-primary);
 
+    &:focus,
     &:hover {
       background-color: var(--color-primary-dark);
     }
@@ -37,7 +38,7 @@
     &-white {
       border: 1px solid var(--color-white);
 
-      &:hover {
+      &:focus &:hover {
         color: var(--color-primary);
         background-color: var(--color-white);
       }
@@ -47,6 +48,7 @@
       color: var(--color-primary);
       border: 1px solid var(--color-primary);
 
+      &:focus,
       &:hover {
         color: var(--color-white);
         background-color: var(--color-primary);

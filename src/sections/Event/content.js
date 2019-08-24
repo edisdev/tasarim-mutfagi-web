@@ -3,7 +3,7 @@ import EventCard from '../../components/EventCard'
 
 function EventContent({ event }) {
   return (
-    <div className="col-12 col-md-7 col-lg-5 col-xl-5 SectionEvent-content">
+    <div className="col-12 col-md-7 col-lg-5 SectionEvent-content">
       {/* header */}
       <h2>Etkinlikler</h2>
       <p className="desc c-gray mt-3">

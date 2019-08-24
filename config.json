@@ -15,7 +15,7 @@
     "background_color": "#111",
     "theme_color": "#111",
     "display": "minimal-ui",
-    "icon": "src/images/icon.jpg"
+    "icon": "static/assets/icon.jpg"
   },
   "trackingId": 4564534
 }

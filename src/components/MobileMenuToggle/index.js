@@ -8,6 +8,7 @@ import Icon from '../Icon'
 function MobileMenuToggle({ isActive, onToggle }) {
   return (
     <button
+      tabIndex="-1"
       type="button"
       onClick={onToggle}
       className={c('mobile-menu-toggle', 'BtnIcon', { '--active': isActive })}

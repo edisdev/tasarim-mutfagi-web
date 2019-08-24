@@ -3,7 +3,7 @@ import c from 'classnames'
 import { useScrollPosition } from 'react-use-scroll-position'
 
 import './style.css'
-import logo from '../../images/logo.svg'
+import logo from '../../../static/assets/logo.svg'
 import Navigation from '../Navigation'
 import MobileMenuToggle from '../MobileMenuToggle'
 

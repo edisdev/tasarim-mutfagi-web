@@ -6,7 +6,9 @@
     height: 100px;
     opacity: 0.5;
 
+    &:focus,
     &:hover {
+      outline: 0;
       opacity: 1;
     }
   }
