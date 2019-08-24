@@ -6,8 +6,6 @@
   Tasarım Mutfağı Web Sitesi
 </h1>
 
-Demo: https://tm19.netlify.com/
-
 #### Start developing
 
 ```sh
