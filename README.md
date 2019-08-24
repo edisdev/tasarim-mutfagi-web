@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Tasarım Mutfağı" src="https://github.com/ademilter/tasarim-mutfagi-web/blob/master/src/images/icon.jpg" width="70" />
+    <img alt="Tasarım Mutfağı" src="https://github.com/ademilter/tasarim-mutfagi-web/blob/master/static/assets/icon.jpg" width="70" />
 </p>
 
 <h1 align="center">
