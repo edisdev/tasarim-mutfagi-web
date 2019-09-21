@@ -4,9 +4,6 @@ import animateScrollTo from 'animated-scroll-to';
 
 import './style.css';
 
-import NavBubble1 from '../../../static/assets/nav/bubble-1.png';
-import NavBubble2 from '../../../static/assets/nav/bubble-2.png';
-
 function Navigation({ data, isMobile, onToggle }) {
   const go = (id) => {
     animateScrollTo(document.querySelector(`#${id}`), {
@@ -31,12 +28,6 @@ function Navigation({ data, isMobile, onToggle }) {
           </button>
         ))}
       </nav>
-      {isMobile && (
-        <>
-          <img className="nav-bubble-1" src={NavBubble1} alt="" width="139" />
-          <img className="nav-bubble-2" src={NavBubble2} alt="" width="249" />
-        </>
-      )}
     </div>
   );
 }

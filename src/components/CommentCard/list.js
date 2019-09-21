@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import c from 'classnames';
+
 import './style.css';
 import Icon from '../Icon';
 
@@ -29,6 +31,17 @@ function CountCol(item) {
       </div>
       <div className="commend">{ comment }</div>
     </div>
+  );
+}
+
+
+function SliderButton(item) {
+  const { position, setSliderAction } = item;
+  console.log(item);
+  return (
+    <button type="button" className={c('sliderButton', position)} onClick={setSliderAction}>
+      <Icon name={position} />
+    </button>
   );
 }
 
@@ -68,9 +81,28 @@ class List extends Component {
     });
   }
 
+  setSliderAction = (position) => {
+    const { selectedCommend } = this.state;
+    const { data } = this.props;
+    const hasSelectedComment = Object.keys(selectedCommend).length > 0;
+    let currentIndex = 0;
+    const isPrev = position === 'left';
+
+    if (hasSelectedComment) {
+      const selectedIndex = data.findIndex(item => item.id === selectedCommend.id);
+      if (selectedIndex > 1 && isPrev) {
+        currentIndex = selectedIndex - 1;
+      } else if (selectedIndex < data.length - 1) {
+        currentIndex = selectedIndex + 1;
+      }
+    }
+    this.setSelectedCommend(data[currentIndex]);
+  }
+
   componentWillMount() {
     window.addEventListener('click', (e) => {
-      if (!e.target.closest('.commendCard')) {
+      const sportClickedItem = ['.sliderButton ', '.commendCard', '.commend'];
+      if (sportClickedItem.findIndex(item => e.target.closest(item)) === -1) {
         this.setSelectedCommend({});
       }
     });
@@ -85,6 +117,7 @@ class List extends Component {
         <div className="container">
           <h2>Yorumlar</h2>
           <div className="comments">
+            <SliderButton position="left" setSliderAction={() => this.setSliderAction('left')} />
             <div className="row">
               {data.map((commend, index) => (
                 <CountCol
@@ -96,6 +129,7 @@ class List extends Component {
               ))}
             </div>
             <ActiveCommend commend={selectedCommend} />
+            <SliderButton position="right" setSliderAction={() => this.setSliderAction('right')} />
           </div>
         </div>
       </section>

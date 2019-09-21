@@ -4,6 +4,32 @@
     position: relative;
     width: 100%;
 
+    .sliderButton {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--color-hide);
+      color: var(--color-white);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 100;
+      @media (--xsm) {
+        display: none;
+      }
+      svg {
+        pointer-events: none;
+        z-index: -1;
+      }
+      &.left {
+        right: calc(100% + 60px);
+      }
+      &.right {
+        left: calc(100% + 60px);
+      }
+    }
+    
+
     .activeCommend {
       width: 100%;
       max-width: 540px;
@@ -58,6 +84,7 @@
       .who_title {
         color: var(--color-hide);
         font-size: var(--fs-small);
+        width: 100%;
       }
     }
   }
@@ -75,7 +102,14 @@
   flex-direction: column;
   align-items: center;
   cursor: grab;
+  position: relative;
 
+  @media (--xsm) {
+    border: 0; 
+    &:not(.activeCommend) {
+      display: none;
+    }
+  }
   .commend {
     margin-top: var(--space-3);
     color: var(--color-gray);

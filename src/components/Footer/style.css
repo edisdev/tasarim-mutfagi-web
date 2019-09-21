@@ -1,0 +1,79 @@
+.AppFooter {
+  height: 530px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 83px;
+  position: relative;
+  &:after,
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &:before {
+    width: 250px;
+    height: 250px;
+    background-image: url(../../images/footer/balon-sol.png);
+    bottom: 83px;
+  }
+
+  &::after {
+    width: 250px;
+    height: 379px;
+    background-image: url(../../images/footer/balon-sag.png);
+    bottom: 0;
+    right: 0;
+  }
+  .footerContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 383px;
+    position: relative;
+
+    &::after,
+    &::before {
+      position: absolute;
+      top: 0;
+      content: "";
+      background-size: cover;
+      max-width: 33.3%;
+      height: 323px;
+      width: 312px;
+    }
+
+    &::before {
+      left: 0;
+      background-image: url(../../images/footer/left-photos.png);
+    }
+
+    &::after {
+      right: 0;
+      background-image: url(../../images/footer/right-photos.png);
+    }
+  }
+  .social-btn {
+    max-width: max-content;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  .description {
+    margin-bottom: 30px;
+  }
+  .SocialFields {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .SocialButton {
+      margin-right: 30px;
+    }
+  }
+}

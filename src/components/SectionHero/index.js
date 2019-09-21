@@ -1,11 +1,6 @@
 import React from 'react';
 import './style.css';
 
-import HomeBubble1 from '../../images/home/bubble-1.png';
-import HomeBubble2 from '../../images/home/bubble-2.png';
-import HomeBubble3 from '../../images/home/bubble-3.png';
-import HomeBubble4 from '../../images/home/bubble-4.png';
-
 function Hero() {
   return (
     <div className="Section SectionHero">
@@ -26,10 +21,6 @@ function Hero() {
             </div>
           </div>
         </div>
-        <img className="home-bubble-1" src={HomeBubble1} alt="" width="143" />
-        <img className="home-bubble-2" src={HomeBubble2} alt="" width="406" />
-        <img className="home-bubble-3" src={HomeBubble3} alt="" width="377" />
-        <img className="home-bubble-4" src={HomeBubble4} alt="" width="385" />
       </div>
     </div>
   );

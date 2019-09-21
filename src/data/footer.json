@@ -1,0 +1,33 @@
+[
+  {
+    "name": "facebook",
+    "label": "Facebook",
+    "count": 0,
+    "url": ""
+  },
+  {
+    "name": "twitter",
+    "label": "Twitter",
+    "url": "https://twitter.com/tasarimmutfagi"
+  },
+  {
+    "name": "youtube",
+    "label": "Youtube",
+    "url": "https://www.youtube.com/tasarimmutfagi"
+  },
+  {
+    "name": "instagram",
+    "label": "Instagram",
+    "url": "https://www.instagram.com/tasarimmutfagitv/"
+  },
+  {
+    "name": "meetup",
+    "label": "Meetup",
+    "url": "https://www.meetup.com/tasarimmutfagi/"
+  },
+  {
+    "name": "medium",
+    "label": "Medium",
+    "url": ""
+  }
+]
