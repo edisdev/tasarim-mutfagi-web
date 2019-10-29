@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import c from 'classnames';
 
 import './style.css';
-import Icon from '../Icon';
+import Icon from '../../components/Icon';
 
 import DontaeLittle from '../../images/commend/dontae_little.png';
 import YakupBayrak from '../../images/commend/yakup_bayrak.png';
@@ -37,7 +37,6 @@ function CountCol(item) {
 
 function SliderButton(item) {
   const { position, setSliderAction } = item;
-  console.log(item);
   return (
     <button type="button" className={c('sliderButton', position)} onClick={setSliderAction}>
       <Icon name={position} />

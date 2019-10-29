@@ -16,6 +16,7 @@ class Section extends React.Component {
 
   render() {
     const { Flickity } = this.state;
+    const { data } = this.props;
 
     return (
       <div className="Section SectionSlider">
@@ -23,7 +24,7 @@ class Section extends React.Component {
           <div className="row">
             <div className="col-12 col-lg-10 offset-lg-1">
               {Flickity && (
-                <Slider Flickity={Flickity} data={this.props.data} />
+                <Slider Flickity={Flickity} data={data} />
               )}
             </div>
           </div>

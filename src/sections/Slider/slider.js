@@ -1,13 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 const flickityOptions = {
   selectedAttraction: 0.2,
   friction: 0.8,
   prevNextButtons: false,
-  pageDots: false
-}
+  pageDots: false,
+};
 
-function SliderItem({ thumbnail, title, description, button }) {
+function SliderItem({
+  thumbnail,
+  title,
+  description,
+  button,
+}) {
   return (
     <div className="SliderItem">
       <img className="SliderItem-logo" src={thumbnail} alt={title} />
@@ -17,7 +22,7 @@ function SliderItem({ thumbnail, title, description, button }) {
         <button className="Btn Btn-primary mt-3">{button.text}</button>
       </div>
     </div>
-  )
+  );
 }
 
 function Slider({ Flickity, data }) {
@@ -27,7 +32,7 @@ function Slider({ Flickity, data }) {
         <SliderItem key={item.id} {...item.frontmatter} />
       ))}
     </Flickity>
-  )
+  );
 }
 
-export default Slider
+export default Slider;

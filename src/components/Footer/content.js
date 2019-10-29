@@ -1,15 +1,15 @@
 import React from 'react';
 
-// import Icon from '../Icon';
-// import SocialButton from '../SocialButton';
+import Icon from '../Icon';
+import SocialButton from '../SocialButton';
 
-// function Socials({ edges }) {
-//   return edges.map(edge => (
-//     <SocialButton {...edge} key={edge.name}>
-//       <Icon name={edge.name} />
-//     </SocialButton>
-//   ));
-// }
+function Socials({ edges }) {
+  return edges.map(edge => (
+    <SocialButton {...edge} key={edge.name}>
+      <Icon name={edge.name} />
+    </SocialButton>
+  ));
+}
 
 function Content({ edges }) {
   return (
@@ -27,7 +27,7 @@ function Content({ edges }) {
         </a>
       </div>
       <div className="SocialFields">
-        {/* <Socials edges={edges} /> */}
+        <Socials edges={edges} />
       </div>
     </footer>
   );
