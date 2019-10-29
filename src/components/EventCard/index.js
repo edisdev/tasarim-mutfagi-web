@@ -12,7 +12,7 @@ import './style.css';
 //   url: ''
 // }
 
-function EventCard({ title, date, url, space }) {
+function EventCard({ title, date, space }) {
   return (
     <div className="EventCard">
       <div className="EventCard-body">

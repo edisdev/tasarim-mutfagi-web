@@ -9,10 +9,26 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-postcss',
     'gatsby-transformer-json',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/data`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 200,
+            },
+          },
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+        ],
       },
     },
     {

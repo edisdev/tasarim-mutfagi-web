@@ -16,13 +16,11 @@ function Event({ supporters }) {
                 <a
                   rel="noopener noreferrer"
                   className="SectionSupport-logo"
-                  href={support.url}
+                  href={support.frontmatter.url}
                 >
                   <img
-                    alt={support.label}
-                    src={require(`../../images/supporters/${
-                      support.logoName
-                    }.svg`)}
+                    alt={support.frontmatter.title}
+                    src={support.frontmatter.logo}
                   />
                 </a>
               </div>

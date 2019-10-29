@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import c from 'classnames';
 
 import './style.css';
-import logo from '../../images/logo.svg';
+import logo from '../../images/tasarim_mutfagi.png';
 import Navigation from '../Navigation';
 import MobileMenuToggle from '../MobileMenuToggle';
 

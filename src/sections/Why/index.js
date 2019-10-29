@@ -8,7 +8,7 @@ function Query() {
     <StaticQuery
       query={query}
       render={(data) => {
-        const edges = data.allWhyJson.edges.map(o => o.node);
+        const edges = data.allMarkdownRemark.edges.map(o => o.node);
         return <SectionWhy data={edges} />;
       }}
     />
