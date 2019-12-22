@@ -99,6 +99,7 @@ class List extends Component {
   }
 
   componentWillMount() {
+    if (typeof window === 'undefined') return;
     window.addEventListener('click', (e) => {
       const sportClickedItem = ['.sliderButton ', '.commendCard', '.commend'];
       if (sportClickedItem.findIndex(item => e.target.closest(item)) === -1) {
