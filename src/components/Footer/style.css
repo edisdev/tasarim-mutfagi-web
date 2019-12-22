@@ -18,6 +18,10 @@
     height: 250px;
     background-image: url(../../images/footer/balon-sol.png);
     bottom: 83px;
+     @media(--xsm) {
+      bottom: auto;
+      top: 100%;
+    }
   }
 
   &::after {
@@ -26,6 +30,9 @@
     background-image: url(../../images/footer/balon-sag.png);
     bottom: 0;
     right: 0;
+    @media(--xsm) {
+      display: none;
+    }
   }
   .footerContent {
     text-align: center;
@@ -35,6 +42,10 @@
     align-items: center;
     min-height: 383px;
     position: relative;
+    @media(--xsm) {
+     text-align: left;
+     align-items: flex-start;
+    }
 
     &::after,
     &::before {
@@ -50,6 +61,9 @@
     &::before {
       left: 0;
       background-image: url(../../images/footer/left-photos.png);
+      @media(--xsm) {
+        display: none;
+      }
     }
 
     &::after {
@@ -62,6 +76,9 @@
   }
   .title {
     margin-bottom: 20px;
+    @media(--xsm) {
+      max-width: 70%;
+    }
   }
   .description {
     margin-bottom: 30px;
@@ -71,9 +88,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
+    @media(--xsm) {
+      flex-wrap: wrap;
+      padding: 50px;
+    }
     .SocialButton {
       margin-right: 30px;
+      @media(--xsm) {
+       margin-bottom: 30px;
+      }
     }
   }
 }

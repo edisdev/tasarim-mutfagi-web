@@ -14,6 +14,9 @@ function EventContent({ event }) {
       <div className="mt-5">
         <EventCard {...event.frontmatter} />
       </div>
+      <div className="mt-3">
+        <a href="/etkinlikler" className="Btn Btn-primary">Tüm Etkinlikler</a>
+      </div>
     </div>
   );
 }

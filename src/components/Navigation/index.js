@@ -4,8 +4,16 @@ import animateScrollTo from 'animated-scroll-to';
 
 import './style.css';
 
-function Navigation({ data, isMobile, onToggle }) {
+function Navigation({
+  data,
+  isMobile,
+  onToggle,
+  path = '/',
+}) {
   const go = (id) => {
+    if (window.location.pathname !== path) {
+      window.location.pathname = path;
+    }
     animateScrollTo(document.querySelector(`#${id}`), {
       speed: 200,
       offset: -60,

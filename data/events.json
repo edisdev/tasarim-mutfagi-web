@@ -1,0 +1,49 @@
+[
+  {
+    "isOld": false,
+    "name": "Açık Mutfak #5 x Protel",
+    "date": "18",
+    "mouth": "May",
+    "place": "Protel",
+    "day": "Cumartesi",
+    "hour": "13:00",
+    "photos": [],
+    "link": "https://www.meetup.com/tasarimmutfagi/events/258287523"
+  },
+  {
+    "isOld": true,
+    "name": "Haftaya Mola! x Raum",
+    "date": "20",
+    "mouth": "Şub",
+    "place": "Raum Akaretler",
+    "day": "Çarşamba",
+    "hour": "22:00",
+    "photos": [
+      "20_Sub_2019_image_1.jpg",
+      "20_Sub_2019_image_2.jpg",
+      "20_Sub_2019_image_3.jpg",
+      "20_Sub_2019_image_4.jpg",
+      "20_Sub_2019_image_5.jpg",
+      "20_Sub_2019_image_6.jpg"
+    ],
+    "link": "https://www.meetup.com/tasarimmutfagi/events/258287523"
+  },
+  {
+    "isOld": true,
+    "name": "MERGE x GDGİstanbul",
+    "date": "19",
+    "mouth": "Ara",
+    "place": "Protel",
+    "day": "Çarşamba",
+    "hour": "19:00",
+    "photos": [
+      "19_Ara_2018_image_1.jpg",
+      "19_Ara_2018_image_2.jpg",
+      "19_Ara_2018_image_3.jpg",
+      "19_Ara_2018_image_4.jpg",
+      "19_Ara_2018_image_5.jpg",
+      "19_Ara_2018_image_6.jpg"
+    ],
+    "link": "https://www.meetup.com/tasarimmutfagi/events/258287523"
+  }
+]

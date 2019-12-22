@@ -10,20 +10,21 @@ class Section extends React.Component {
   constructor(props) {
     super(props);
     if (typeof window !== 'undefined') {
-      this.state.Flickity = require('react-flickity-component');
+      this.state = {
+        Flickity: require('react-flickity-component'),
+      };
     }
   }
 
   render() {
     const { Flickity } = this.state;
     const { data } = this.props;
-
     return (
       <div className="Section SectionSlider">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-10 offset-lg-1">
-              {Flickity && (
+              {!!Flickity && (
                 <Slider Flickity={Flickity} data={data} />
               )}
             </div>

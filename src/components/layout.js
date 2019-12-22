@@ -4,7 +4,6 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 import 'styles/app.css';
-import TasarimMutfagi from '../images/tasarim_mutfagi.png';
 
 const Layout = ({ children }) => (
   <StaticQuery

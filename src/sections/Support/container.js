@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 
 function Event({ supporters }) {
-  console.log(supporters);
   return (
     <div id="destekcilerimiz" className="Section SectionSupport">
       <div className="container">

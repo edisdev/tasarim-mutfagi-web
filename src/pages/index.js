@@ -6,7 +6,7 @@ import SectionEvent from '../sections/Event';
 import SectionWhy from '../sections/Why';
 import SectionSupport from '../sections/Support';
 import SectionCommendCard from '../sections/CommentCard';
-import SectionEBulten from '../components/EBulten';
+import SectionEBulten from '../sections/EBulten';
 import SectionSocialCount from '../sections/SocialCount';
 import SEO from '../components/seo';
 import Layout from '../components/layout';

@@ -1,10 +1,10 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
 
-import HomeBubble1 from '../../../static/assets/home/bubble-1.png'
-import HomeBubble2 from '../../../static/assets/home/bubble-2.png'
-import HomeBubble3 from '../../../static/assets/home/bubble-3.png'
-import HomeBubble4 from '../../../static/assets/home/bubble-4.png'
+import HomeBubble1 from '../../../static/assets/home/bubble-1.png';
+import HomeBubble2 from '../../../static/assets/home/bubble-2.png';
+import HomeBubble3 from '../../../static/assets/home/bubble-3.png';
+import HomeBubble4 from '../../../static/assets/home/bubble-4.png';
 
 function Hero() {
   return (
